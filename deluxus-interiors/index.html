@@ -378,7 +378,7 @@ footer .bname{color:#fff}
 (function(){
   var deadline = new Date('2026-11-26T23:59:59+04:00');
   var now = new Date();
-  var days = Math.max(0, Math.ceil((deadline - now)/86400000));
+  var days = Math.max(0, Math.round((Date.UTC(deadline.getFullYear(),deadline.getMonth(),deadline.getDate()) - Date.UTC(now.getFullYear(),now.getMonth(),now.getDate()))/86400000));
   var txt = days > 0 ? ('Preview expires in ' + days + ' day' + (days===1?'':'s') + ' — 26 Nov 2026') : 'Preview expired — 26 Nov 2026';
   document.getElementById('expiryText').textContent = txt;
   document.getElementById('daysLeft').textContent = days + ' days left';
