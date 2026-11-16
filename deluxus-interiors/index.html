@@ -36,6 +36,15 @@ STRICT UI / UX AUDIT — ORIGINAL IMPLEMENTATION
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DELUXUS Interiors — Interior Design &amp; Fit-Out Studio, Abu Dhabi</title>
 <meta name="description" content="DELUXUS Interiors is an interior design and fit-out studio in Abu Dhabi. One team designs and builds — concept to final key. Founded 2016.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#141414">
+<link rel="icon" href="https://deluxusinteriors.com/wp-content/uploads/2025/05/cropped-cropped-Untitled-1.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DELUXUS Interiors">
+<meta property="og:title" content="DELUXUS Interiors — Interior Design &amp; Fit-Out Studio, Abu Dhabi">
+<meta property="og:description" content="One team designs and builds — concept to final key. Interior design, fit-out and project management in Abu Dhabi.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&amp;w=1200&amp;auto=format&amp;fit=crop">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -46,7 +55,7 @@ STRICT UI / UX AUDIT — ORIGINAL IMPLEMENTATION
   --paper:#F4F1EA;
   --paper-2:#EDE8DC;
   --gold:#D9931A;
-  --gold-deep:#B57A12;
+  --gold-deep:#855C07;
   --olive:#667149;
   --line:rgba(20,20,20,.16);
   --line-light:rgba(244,241,234,.22);
@@ -360,6 +369,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
 .contact-copy h2 em{font-style:italic;color:var(--gold-deep)}
 .contact-copy>p{margin:0 0 30px;color:var(--muted);max-width:480px;line-height:1.85}
 .contact-rows{border-top:1px solid var(--line)}
+.contact-row dd a,.footer-col a{display:inline-block;padding-block:4px}
 .contact-row{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
 .contact-row dt{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);padding-top:3px}
 .contact-row dd{margin:0;line-height:1.8}
@@ -488,7 +498,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
   .map-wrap iframe{height:280px}
   .wa-float{right:14px;bottom:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));padding:6px 14px 6px 6px;min-height:52px}
   .wa-float .wa-text small{display:none}
-  .liquid-timer{left:14px;bottom:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));width:125px;height:58px}
+  .liquid-timer{left:14px;bottom:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));width:138px;height:58px}
 }
 @media (max-width:480px){
   .preview-bar{font-size:11px;line-height:1.5;padding:8px 12px}
@@ -502,14 +512,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
   .work-item figcaption .cap-sub{text-align:left}
   .estimator{padding:28px 20px}
   .est-range{font-size:2.1rem}
-  .liquid-timer{width:118px;height:54px;border-radius:19px}
+  .liquid-timer{width:132px;height:54px;border-radius:19px}
   .liquid-days{font-size:13px}
 }
 @media (max-width:375px){
   .preview-bar{font-size:11px;padding:9px 12px}
   .brand-name{font-size:21px}
   .hero h1{font-size:2.75rem}
-  .liquid-timer{width:112px;height:52px;left:10px;bottom:10px}
+  .liquid-timer{width:128px;height:52px;left:10px;bottom:10px}
   .wa-float{right:10px;bottom:10px}
 }
 @media (max-height:680px) and (orientation:landscape){
@@ -560,7 +570,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
 <!-- HERO -->
 <section class="hero" id="top" aria-labelledby="heroTitle">
   <div class="hero-media" aria-hidden="true">
-    <img id="heroImage" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2400&auto=format&fit=crop" alt="Luxury living room interior" fetchpriority="high">
+    <img id="heroImage" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1600&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=900&auto=format&fit=crop 900w, https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1600&auto=format&fit=crop 1600w, https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2400&auto=format&fit=crop 2400w" sizes="100vw" alt="Luxury living room interior" fetchpriority="high">
   </div>
   <div class="hero-grain" aria-hidden="true"></div>
   <div class="hero-inner">
@@ -579,7 +589,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
     </div>
     <hr class="hero-rule" aria-hidden="true">
     <div class="hero-meta">
-      <p><strong>5.0 ★</strong> on Google — 100+ reviews</p>
+      <p><strong>5.0 ★</strong> — rated on Google by Abu Dhabi clients</p>
       <p>Luxury Interiors — Designed &amp; Built</p>
       <p>Falcon Tower, Hamdan Street</p>
     </div>
@@ -607,11 +617,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
         <ul class="studio-facts">
           <li><div class="fact-num">2016</div><div class="fact-label">Founded in<br>Abu Dhabi</div></li>
           <li><div class="fact-num">20+</div><div class="fact-label">Years of practice<br>in the UAE</div></li>
-          <li><div class="fact-num">5.0 ★</div><div class="fact-label">Google rating<br>100+ reviews</div></li>
+          <li><div class="fact-num">5.0 ★</div><div class="fact-label">Google rating<br>Client reviews</div></li>
         </ul>
       </div>
       <figure class="studio-media reveal reveal--d1">
-        <img src="https://deluxusinteriors.com/wp-content/uploads/2025/06/20220703_095134-scaled-736x504.jpg" alt="A DELUXUS Interiors private residence in Abu Dhabi, with warm timber joinery and soft daylight" loading="lazy">
+        <img src="https://deluxusinteriors.com/wp-content/uploads/2025/06/20220703_095134-scaled-736x504.jpg" srcset="https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/20220703_095134-scaled.jpg?w=736 736w, https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/20220703_095134-scaled.jpg?w=1024 1024w, https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/20220703_095134-scaled.jpg?w=1536 1536w" sizes="(max-width: 1100px) 100vw, 600px" alt="A DELUXUS Interiors private residence in Abu Dhabi, with warm timber joinery and soft daylight" loading="lazy">
         <figcaption><span><strong>Private Residence</strong></span><span>High-end finishing &amp; joinery</span></figcaption>
       </figure>
     </div>
@@ -666,25 +676,25 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
     <div class="work-grid">
       <article class="work-item work-item--wide reveal">
         <figure>
-          <div class="work-media"><img src="https://deluxusinteriors.com/wp-content/uploads/2025/06/Al-Nabooda-2-736x504.jpg" alt="Al Nabooda project — a DELUXUS Interiors fit-out with warm timber panelling and a bespoke reception desk" loading="lazy"></div>
+          <div class="work-media"><img src="https://deluxusinteriors.com/wp-content/uploads/2025/06/Al-Nabooda-2-736x504.jpg" srcset="https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/Al-Nabooda-2.jpg?w=736 736w, https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/Al-Nabooda-2.jpg?w=1024 1024w, https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/Al-Nabooda-2.jpg?w=1536 1536w" sizes="(max-width: 767px) 100vw, 1240px" alt="Al Nabooda project — a DELUXUS Interiors fit-out with warm timber panelling and a bespoke reception desk" loading="lazy"></div>
           <figcaption><span class="cap-title">Al Nabooda</span><span class="cap-sub">Fit-out &amp; MEP<br>Commercial · Abu Dhabi</span></figcaption>
         </figure>
       </article>
       <article class="work-item work-item--tall reveal reveal--d1">
         <figure>
-          <div class="work-media"><img src="https://deluxusinteriors.com/wp-content/uploads/2025/06/20230301_122219-e1751259112690-736x504.jpg" alt="Commercial space by DELUXUS Interiors — a calm, light-filled interior with stone and timber finishes" loading="lazy"></div>
+          <div class="work-media"><img src="https://deluxusinteriors.com/wp-content/uploads/2025/06/20230301_122219-e1751259112690-736x504.jpg" srcset="https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/20230301_122219-e1751259112690.jpg?w=736 736w, https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/20230301_122219-e1751259112690.jpg?w=1024 1024w, https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/20230301_122219-e1751259112690.jpg?w=1536 1536w" sizes="(max-width: 767px) 100vw, 620px" alt="Commercial space by DELUXUS Interiors — a calm, light-filled interior with stone and timber finishes" loading="lazy"></div>
           <figcaption><span class="cap-title">Commercial Space</span><span class="cap-sub">Design &amp; build<br>Authorities approvals</span></figcaption>
         </figure>
       </article>
       <article class="work-item reveal">
         <figure>
-          <div class="work-media"><img src="https://deluxusinteriors.com/wp-content/uploads/2025/06/20240223_112254-scaled-736x504.jpg" alt="Corporate fit-out by DELUXUS Interiors — a refined office interior with dark joinery and brass details" loading="lazy"></div>
+          <div class="work-media"><img src="https://deluxusinteriors.com/wp-content/uploads/2025/06/20240223_112254-scaled-736x504.jpg" srcset="https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/20240223_112254-scaled.jpg?w=736 736w, https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/20240223_112254-scaled.jpg?w=1024 1024w, https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/20240223_112254-scaled.jpg?w=1536 1536w" sizes="(max-width: 767px) 100vw, 620px" alt="Corporate fit-out by DELUXUS Interiors — a refined office interior with dark joinery and brass details" loading="lazy"></div>
           <figcaption><span class="cap-title">Corporate Fit-Out</span><span class="cap-sub">Design &amp; build<br>Office · Abu Dhabi</span></figcaption>
         </figure>
       </article>
       <article class="work-item reveal reveal--d1">
         <figure>
-          <div class="work-media"><img src="https://deluxusinteriors.com/wp-content/uploads/2025/06/1-copy-736x504.jpg" alt="Retail interior by DELUXUS Interiors — a bright shop interior with display joinery and soft lighting" loading="lazy"></div>
+          <div class="work-media"><img src="https://deluxusinteriors.com/wp-content/uploads/2025/06/1-copy-736x504.jpg" srcset="https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/1-copy.jpg?w=736 736w, https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/1-copy.jpg?w=1024 1024w, https://i0.wp.com/deluxusinteriors.com/wp-content/uploads/2025/06/1-copy.jpg?w=1536 1536w" sizes="(max-width: 767px) 100vw, 620px" alt="Retail interior by DELUXUS Interiors — a bright shop interior with display joinery and soft lighting" loading="lazy"></div>
           <figcaption><span class="cap-title">Retail Interior</span><span class="cap-sub">Interior works<br>Retail · Abu Dhabi</span></figcaption>
         </figure>
       </article>
@@ -738,7 +748,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
       </figure>
     </div>
     <div class="google-note reveal">
-      <span><strong>5.0 ★ on Google</strong> — from <strong>100+ reviews</strong></span>
+      <span><strong>5.0 ★ on Google</strong> — rated by their clients</span>
       <span class="stars" aria-hidden="true">★★★★★</span>
       <span>Read the reviews on Google — search “DELUXUS Interiors Abu Dhabi”.</span>
     </div>
@@ -785,7 +795,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
         <div class="est-field">
           <label for="estArea">Area — <span id="areaLabel">200 m²</span></label>
           <input type="range" id="estArea" name="area" min="40" max="800" step="10" value="200" aria-describedby="areaLabel">
-          <div class="area-readout"><span>40 m²</span><strong id="areaValue">200 m²</strong><span>800 m²</span></div>
+          <div class="area-readout"><span>40 m²</span><strong id="areaValue">200 m²</strong><span id="areaMaxLabel">800 m²</span></div>
         </div>
       </div>
       <div class="est-result" aria-live="polite">
@@ -854,7 +864,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
     <div class="footer-base">
       <span>© 2026 DELUXUS Interiors. All rights reserved.</span>
       <span>Concept preview by <span class="olive">Safwan Digital</span> — expires 26 Nov 2026.</span>
-      <span>5.0 ★ · 100+ Google reviews</span>
+      <span>Rated 5.0 ★ on Google</span>
     </div>
   </div>
 </footer>
@@ -901,6 +911,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
     timer.setAttribute("aria-label", "Concept preview — " + dayLabel + " left, expires 26 November 2026");
   }
   if(liquidDays){ liquidDays.textContent = dayLabel + " left"; }
+  if(dayCount(todayMid) > dayCount(PREVIEW_END)){
+    if(bar){ bar.textContent = "Preview ended"; }
+    if(liquidDays){ liquidDays.textContent = "Preview ended"; }
+    var liquidSubEl = document.querySelector(".liquid-sub");
+    if(liquidSubEl){ liquidSubEl.textContent = "Safwan Digital"; }
+    if(timer){ timer.style.setProperty("--liquid-level", "0%"); timer.setAttribute("aria-label", "Concept preview — ended 26 November 2026"); }
+  }
   /* ---------- HEADER SHADOW ---------- */
   var header = document.getElementById("siteHeader");
   function onScroll(){ if(header){ header.classList.toggle("is-scrolled", window.scrollY > 8); } }
@@ -933,10 +950,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
     apartment:{ standard:[800,1200], premium:[1200,1800], luxury:[1900,2900] },
     office:{ standard:[700,1100], premium:[1100,1700], luxury:[1700,2600] },
     retail:{ standard:[750,1150], premium:[1150,1750], luxury:[1800,2700] },
-    room:{ standard:[900,1400], premium:[1400,2100], luxury:[2200,3400] }
+    room:{ standard:[700,1100], premium:[1100,1700], luxury:[1700,2600] }
   };
   var TYPE_LABELS = { villa:"Villa", apartment:"Apartment", office:"Office / corporate", retail:"Retail / commercial", room:"Single room / majlis" };
   var FINISH_LABELS = { standard:"Standard finish", premium:"Premium finish", luxury:"Luxury finish" };
+  var AREA_MAX = { villa:800, apartment:400, office:600, retail:600, room:120 };
+  var areaMaxLabelEl = document.getElementById("areaMaxLabel");
   var typeEl = document.getElementById("estType");
   var finishEl = document.getElementById("estFinish");
   var areaEl = document.getElementById("estArea");
@@ -949,13 +968,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
   function updateEstimate(){
     if(!typeEl || !finishEl || !areaEl) return;
     var type = typeEl.value, finish = finishEl.value;
+    var maxArea = AREA_MAX[type] || 800;
+    if(parseInt(areaEl.max, 10) !== maxArea){ areaEl.max = maxArea; if(areaMaxLabelEl) areaMaxLabelEl.textContent = maxArea + " m²"; }
+    if(parseInt(areaEl.value, 10) > maxArea){ areaEl.value = maxArea; }
     var area = parseInt(areaEl.value, 10);
     var rate = (RATES[type] && RATES[type][finish]) || RATES.villa.premium;
     var low = Math.round(rate[0] * area / 1000) * 1000;
     var high = Math.round(rate[1] * area / 1000) * 1000;
     if(areaValueEl) areaValueEl.textContent = area + " m²";
     if(areaLabelEl) areaLabelEl.textContent = area + " m²";
-    areaEl.style.setProperty("--fill", ((area - 40) / (800 - 40) * 100) + "%");
+    areaEl.style.setProperty("--fill", ((area - 40) / (maxArea - 40) * 100) + "%");
     if(rangeEl) rangeEl.textContent = fmt(low) + " – " + fmt(high);
     var summary = TYPE_LABELS[type] + " · " + FINISH_LABELS[finish] + " · " + area + " m² — indicative range, excluding VAT and authority fees.";
     if(summaryEl) summaryEl.textContent = summary;
@@ -971,6 +993,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
   }
   [typeEl, finishEl, areaEl].forEach(function(el){ if(el) el.addEventListener("input", updateEstimate); if(el) el.addEventListener("change", updateEstimate); });
   updateEstimate();
+  /* ---------- VIEW COUNTER (no cookies, no account) ---------- */
+  try{ fetch("https://api.counterapi.dev/v1/safwan-digital/deluxus-preview/up").catch(function(){}); }catch(e){}
   /* ---------- REDUCED MOTION: stop the Ken Burns drift ---------- */
   if(reduceMotion && heroImg){ heroImg.style.animation = "none"; }
 })();
