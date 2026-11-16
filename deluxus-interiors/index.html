@@ -287,7 +287,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
 .index-status{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);white-space:nowrap}
 /* ==== 10 INTERLUDE ==== */
 .interlude{position:relative;overflow:hidden;background:var(--ink);color:var(--paper)}
-.interlude img{width:100%;height:clamp(320px,52vw,560px);object-fit:cover;object-position:center 42%;opacity:.92}
+.interlude img{width:100%;height:clamp(300px,42vw,440px);object-fit:cover;object-position:center 42%;opacity:.92}
 .interlude blockquote{
   position:absolute;
   inset:auto 0 0 0;
@@ -452,7 +452,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
   .footer-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:900px){
-  .header-inner{grid-template-columns:1fr;gap:0;padding-block:12px 0}
+  .header-inner{grid-template-columns:minmax(0,1fr);gap:0;padding-block:12px 0}
+  .header-inner>*{min-width:0}
+  .main-nav{max-width:100%}
+  .main-nav ul{max-width:100%}
   .brand{justify-content:center}
   .header-cta{display:none}
   .main-nav{border-top:1px solid var(--line);margin-top:12px}
@@ -465,6 +468,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
 }
 @media (max-width:767px){
   body{font-size:15.5px}
+  .site-header{position:static}
+  .hero-inner{min-height:0;padding-block:52px 108px}
+  .liquid-timer{width:138px}
+  .liquid-sub{font-size:9px;letter-spacing:.1em;white-space:nowrap}
+  .hero-media img{object-position:center 68%}
   .section-head{grid-template-columns:1fr;gap:10px}
   .section-head .intro{grid-column:1}
   .work-grid{display:block}
@@ -483,6 +491,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
   .liquid-timer{left:14px;bottom:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));width:125px;height:58px}
 }
 @media (max-width:480px){
+  .preview-bar{font-size:11px;line-height:1.5;padding:8px 12px}
   .hero h1{font-size:clamp(2.9rem,14.5vw,3.75rem)}
   .hero-meta{flex-direction:column;align-items:flex-start;gap:6px}
   .btn{width:100%}
@@ -551,7 +560,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
 <!-- HERO -->
 <section class="hero" id="top" aria-labelledby="heroTitle">
   <div class="hero-media" aria-hidden="true">
-    <img id="heroImage" src="https://deluxusinteriors.com/wp-content/uploads/2025/06/20220703_095134-scaled-736x504.jpg" alt="Private residence interior" fetchpriority="high">
+    <img id="heroImage" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2400&auto=format&fit=crop" alt="Luxury living room interior" fetchpriority="high">
   </div>
   <div class="hero-grain" aria-hidden="true"></div>
   <div class="hero-inner">
@@ -571,7 +580,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
     <hr class="hero-rule" aria-hidden="true">
     <div class="hero-meta">
       <p><strong>5.0 ★</strong> on Google — 100+ reviews</p>
-      <p>Private Residence — Interior Fit-Out</p>
+      <p>Luxury Interiors — Designed &amp; Built</p>
       <p>Falcon Tower, Hamdan Street</p>
     </div>
   </div>
