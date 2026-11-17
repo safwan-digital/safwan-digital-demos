@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Yasmin Darwich — Specialist Dermatologist, Abu Dhabi</title>
+<meta name="description" content="Dr. Yasmin Darwich, Specialist Dermatologist at The Skin Lab, Al Bateen, Abu Dhabi. Medical dermatology and non-surgical aesthetic care. Book a consultation on WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Dr. Yasmin Darwich — Specialist Dermatologist, Abu Dhabi">
+<meta property="og:description" content="Specialist dermatology at The Skin Lab, Al Bateen. Consultations in Arabic & English.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1200&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#12241B; --green-2:#1A3226; --ivory:#F7F2E9; --sand:#EAE0CC; --paper:#FDFBF6;
+  --brass:#A98548; --brass-deep:#7C6230; --sage:#71836A; --ink:#1E2A24; --muted:#5A665E;
+  --cream-dim:#D9CFB9; --line:rgba(18,36,27,.14); --line-light:rgba(247,242,233,.16);
+  --bar-h:34px; --head-h:68px; --ease:cubic-bezier(.22,.61,.21,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--ivory);color:var(--ink);line-height:1.65;font-size:16.5px;-webkit-font-smoothing:antialiased}
+[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Inter',sans-serif}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1200px,92%);margin-inline:auto}
+section{scroll-margin-top:calc(var(--bar-h) + var(--head-h) + 14px)}
+h1,h2,h3{font-family:'Fraunces',serif;font-weight:500;line-height:1.08;letter-spacing:-.01em}
+[dir="rtl"] h1,[dir="rtl"] h2,[dir="rtl"] h3{font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:600;letter-spacing:0}
+.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--brass-deep);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--brass)}
+[dir="rtl"] .eyebrow{letter-spacing:0;font-size:.85rem}
+.on-dark .eyebrow{color:var(--sand)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;transition:transform .35s var(--ease),background .35s,border-color .35s;min-height:48px}
+.btn:active{transform:scale(.98)}
+.btn-brass{background:var(--brass);color:#fff}
+.btn-brass:hover{background:var(--brass-deep)}
+.btn-ghost{border:1px solid rgba(247,242,233,.5);color:var(--ivory)}
+.btn-ghost:hover{border-color:var(--ivory)}
+.btn-green{background:var(--green);color:var(--ivory)}
+.btn-green:hover{background:var(--green-2)}
+.btn-line{border:1px solid var(--green);color:var(--green)}
+.btn-line:hover{background:var(--green);color:var(--ivory)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* preview bar */
+.pbar{position:fixed;inset-inline:0;top:0;z-index:120;background:var(--green);color:var(--sand);font-size:.72rem;letter-spacing:.06em;text-align:center;padding:8px 14px}
+[dir="rtl"] .pbar{letter-spacing:0;font-size:.8rem}
+.pbar b{color:#fff;font-weight:600}
+
+/* header */
+header{position:sticky;top:var(--bar-h);z-index:110;background:rgba(247,242,233,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:18px;height:var(--head-h)}
+.wordmark{font-family:'Fraunces',serif;font-size:1.22rem;font-weight:600;text-decoration:none;color:var(--green);white-space:nowrap}
+[dir="rtl"] .wordmark{font-family:'IBM Plex Sans Arabic',sans-serif}
+.wordmark span{color:var(--brass-deep)}
+nav.main{display:flex;gap:30px}
+nav.main a{text-decoration:none;font-size:.9rem;font-weight:500;color:var(--ink);padding:8px 2px}
+nav.main a:hover{color:var(--brass-deep)}
+.head-actions{display:flex;align-items:center;gap:12px}
+.lang-toggle{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang-toggle button{border:0;background:transparent;padding:9px 15px;font:inherit;font-size:.8rem;font-weight:600;cursor:pointer;color:var(--muted);min-height:40px}
+.lang-toggle button.active{background:var(--green);color:var(--ivory)}
+.head-cta{padding:11px 20px;min-height:44px;font-size:.86rem}
+.burger{display:none;border:1px solid var(--line);background:transparent;border-radius:10px;width:44px;height:44px;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.burger i{display:block;width:18px;height:2px;background:var(--green)}
+.mnav{display:none;border-top:1px solid var(--line);padding:10px 0 16px}
+.mnav.open{display:block}
+.mnav a{display:block;padding:12px 4%;text-decoration:none;font-weight:500;border-bottom:1px solid var(--line)}
+.mnav a:last-child{border-bottom:0}
+
+/* hero */
+.hero{background:var(--green);color:var(--ivory);position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:72px 0 84px;position:relative;z-index:2}
+.hero .eyebrow{color:var(--sand)}
+.hero h1{font-size:clamp(2.6rem,5.6vw,4.4rem);margin:20px 0 18px;color:var(--ivory)}
+.hero h1 em{font-style:italic;color:var(--sand)}
+[dir="rtl"] .hero h1 em{font-style:normal;color:var(--brass)}
+.hero-sub{color:var(--cream-dim);font-size:1.06rem;max-width:34rem}
+.hero-sub b{color:#fff;font-weight:600}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.rating-chip{display:inline-flex;align-items:center;gap:10px;margin-top:28px;background:rgba(247,242,233,.08);border:1px solid var(--line-light);border-radius:999px;padding:9px 18px;font-size:.85rem;color:var(--cream-dim)}
+.rating-chip .stars{color:var(--brass);letter-spacing:2px}
+[dir="rtl"] .rating-chip .stars{letter-spacing:0}
+.rating-chip b{color:#fff}
+.hero-photo{position:relative}
+.hero-photo .arch{border-radius:230px 230px 26px 26px;overflow:hidden;border:1px solid rgba(247,242,233,.25);box-shadow:0 40px 80px rgba(0,0,0,.35)}
+.hero-photo .arch img{width:100%;height:560px;object-fit:cover;animation:kb 22s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.08)}}
+.hero-badge{position:absolute;bottom:26px;inset-inline-start:-14px;background:var(--paper);color:var(--ink);border-radius:16px;padding:14px 20px;box-shadow:0 24px 48px rgba(0,0,0,.3);max-width:250px}
+.hero-badge .n{font-family:'Fraunces',serif;font-size:1.5rem;color:var(--green)}
+[dir="rtl"] .hero-badge .n{font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:700}
+.hero-badge p{font-size:.8rem;color:var(--muted);line-height:1.45}
+.stats{border-top:1px solid var(--line-light);position:relative;z-index:2}
+.stats-in{display:grid;grid-template-columns:repeat(4,1fr);}
+.stat{padding:26px 10px 30px;text-align:center;border-inline-end:1px solid var(--line-light)}
+.stat:last-child{border-inline-end:0}
+.stat .num{font-family:'Fraunces',serif;font-size:2rem;color:#fff}
+[dir="rtl"] .stat .num{font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:700}
+.stat .lbl{font-size:.78rem;color:var(--cream-dim);letter-spacing:.05em}
+[dir="rtl"] .stat .lbl{letter-spacing:0}
+
+/* marquee */
+.marquee{background:var(--brass);color:#fff;overflow:hidden;padding:13px 0;transform:rotate(0)}
+.mq-track{display:flex;gap:0;width:max-content;animation:mq 30s linear infinite}
+.mq-track span{font-family:'Fraunces',serif;font-size:1rem;white-space:nowrap;padding:0 18px}
+[dir="rtl"] .mq-track span{font-family:'IBM Plex Sans Arabic',sans-serif}
+.mq-track b{font-weight:400;opacity:.7}
+@keyframes mq{to{transform:translateX(-50%)}}
+[dir="rtl"] .mq-track{animation-name:mqr}
+@keyframes mqr{to{transform:translateX(50%)}}
+
+/* about */
+.about{padding:104px 0}
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:70px;align-items:center}
+.about-photos{position:relative;padding-bottom:64px}
+.about-photos .main{border-radius:26px;overflow:hidden;box-shadow:0 30px 60px rgba(18,36,27,.18)}
+.about-photos .main img{width:100%;height:520px;object-fit:cover}
+.about-photos .small{position:absolute;bottom:0;inset-inline-end:-8px;width:46%;border-radius:20px;overflow:hidden;border:6px solid var(--ivory);box-shadow:0 24px 48px rgba(18,36,27,.22)}
+.about-photos .small img{width:100%;height:190px;object-fit:cover}
+.photo-cap{font-size:.78rem;color:var(--muted);margin-top:12px;max-width:75%}
+.about h2{font-size:clamp(2rem,3.6vw,2.9rem);margin:16px 0 18px;color:var(--green)}
+.about h2 em{font-style:italic;color:var(--brass-deep)}
+[dir="rtl"] .about h2 em{font-style:normal}
+.about p{color:var(--muted);margin-bottom:16px;max-width:36rem}
+.cred{margin-top:26px;border-top:1px solid var(--line)}
+.cred div{display:flex;justify-content:space-between;gap:20px;padding:13px 2px;border-bottom:1px solid var(--line);font-size:.94rem}
+.cred div span:first-child{color:var(--muted)}
+.cred div span:last-child{font-weight:600;color:var(--green);text-align:end}
+
+/* treatments */
+.treat{background:var(--green);color:var(--ivory);padding:104px 0}
+.treat h2{font-size:clamp(2rem,3.6vw,2.9rem);margin:16px 0 14px}
+.treat h2 em{font-style:italic;color:var(--sand)}
+[dir="rtl"] .treat h2 em{font-style:normal;color:var(--brass)}
+.treat .lede{color:var(--cream-dim);max-width:38rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.card{background:var(--green-2);border:1px solid var(--line-light);border-radius:22px;overflow:hidden;transition:transform .5s var(--ease),border-color .5s}
+.card:hover{transform:translateY(-6px);border-color:rgba(247,242,233,.4)}
+.card .ph{height:210px;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.card:hover .ph img{transform:scale(1.07)}
+.card .tx{padding:22px 22px 24px}
+.card h3{font-size:1.28rem;margin-bottom:8px}
+.card p{font-size:.92rem;color:var(--cream-dim)}
+.card a{display:inline-flex;margin-top:14px;font-size:.85rem;font-weight:600;color:var(--sand);text-decoration:none;border-bottom:1px solid var(--brass);padding-bottom:2px}
+.index2{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:64px}
+.index2 h3{font-size:1.05rem;font-family:'Inter',sans-serif;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--sand);margin-bottom:8px}
+[dir="rtl"] .index2 h3{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:0;text-transform:none;font-size:1.2rem}
+.index2 ul{list-style:none}
+.index2 li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:13px 2px;border-bottom:1px solid var(--line-light);font-size:.98rem}
+.index2 li small{color:var(--cream-dim);font-size:.8rem;text-align:end}
+
+/* consultation */
+.consult{padding:104px 0}
+.consult h2{font-size:clamp(2rem,3.6vw,2.9rem);color:var(--green);margin:16px 0 14px}
+.consult h2 em{font-style:italic;color:var(--brass-deep)}
+[dir="rtl"] .consult h2 em{font-style:normal}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:46px}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:26px 22px}
+.step .no{font-family:'Fraunces',serif;font-size:1.9rem;color:var(--brass-deep)}
+[dir="rtl"] .step .no{font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:700}
+.step h3{font-size:1.12rem;margin:10px 0 8px;color:var(--green)}
+[dir="rtl"] .step h3{font-size:1.05rem}
+.step p{font-size:.9rem;color:var(--muted)}
+.fee-note{margin-top:22px;background:var(--sand);border-radius:18px;padding:22px 26px;display:flex;gap:16px;align-items:center;font-size:.95rem}
+.fee-note b{color:var(--green)}
+
+/* practice */
+.practice{background:var(--paper);border-block:1px solid var(--line);padding:104px 0}
+.practice-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:start}
+.practice h2{font-size:clamp(2rem,3.6vw,2.9rem);color:var(--green);margin:16px 0 20px}
+.practice h2 em{font-style:italic;color:var(--brass-deep)}
+[dir="rtl"] .practice h2 em{font-style:normal}
+.p-row{display:flex;gap:16px;padding:15px 0;border-bottom:1px solid var(--line)}
+.p-row .k{flex:0 0 108px;font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brass-deep);padding-top:3px}
+[dir="rtl"] .p-row .k{letter-spacing:0;font-size:.9rem;text-transform:none}
+.p-row .v{font-size:.98rem}
+.p-row .v a{color:var(--green);font-weight:600;text-decoration:none;border-bottom:1px solid var(--brass)}
+.map-frame{border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 48px rgba(18,36,27,.12)}
+.map-frame iframe{width:100%;height:430px;border:0;display:block}
+
+/* faq */
+.faq{padding:104px 0}
+.faq h2{font-size:clamp(2rem,3.6vw,2.9rem);color:var(--green);margin:16px 0 30px}
+.faq h2 em{font-style:italic;color:var(--brass-deep)}
+[dir="rtl"] .faq h2 em{font-style:normal}
+.faq-list{max-width:820px}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item:first-child{border-top:1px solid var(--line)}
+.faq-q{width:100%;background:none;border:0;font:inherit;font-weight:600;font-size:1.02rem;color:var(--green);text-align:start;padding:20px 4px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:44px}
+.faq-q .plus{font-family:'Fraunces',serif;font-size:1.4rem;color:var(--brass-deep);transition:transform .4s var(--ease);flex:0 0 auto}
+.faq-item.open .faq-q .plus{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+.faq-a p{padding:0 4px 20px;color:var(--muted);font-size:.95rem;max-width:44rem}
+
+/* final cta + footer */
+.final{background:var(--green);color:var(--ivory);padding:104px 0;text-align:center}
+.final h2{font-size:clamp(2.2rem,4.6vw,3.6rem);max-width:22ch;margin:0 auto 18px}
+.final h2 em{font-style:italic;color:var(--sand)}
+[dir="rtl"] .final h2 em{font-style:normal;color:var(--brass)}
+.final p{color:var(--cream-dim);max-width:36rem;margin:0 auto}
+.final .hero-ctas{justify-content:center}
+.final .eyebrow{justify-content:center}
+.final .eyebrow::before{display:none}
+footer{background:#0C1A13;color:var(--cream-dim);padding:52px 0 120px;font-size:.88rem}
+.foot-in{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}
+footer .wordmark{color:var(--ivory)}
+footer a{color:var(--sand);text-decoration:none}
+.disc{margin-top:28px;padding-top:20px;border-top:1px solid rgba(247,242,233,.12);font-size:.78rem;opacity:.75}
+
+/* floating */
+.wa-float{position:fixed;bottom:20px;right:20px;z-index:115;width:56px;height:56px;border-radius:50%;background:#22c064;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(0,0,0,.3);transition:transform .3s var(--ease)}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{width:29px;height:29px;fill:#fff}
+.countdown{position:fixed;left:16px;bottom:20px;z-index:115;min-width:132px;max-width:150px;padding:9px 14px 11px;border-radius:999px;overflow:hidden;isolation:isolate;background:rgba(255,255,255,.22);backdrop-filter:blur(19px) saturate(165%);-webkit-backdrop-filter:blur(19px) saturate(165%);border:1px solid rgba(255,255,255,.45);box-shadow:0 10px 28px rgba(18,36,27,.22),inset 0 1px 0 rgba(255,255,255,.5);opacity:.75;transition:opacity .3s;text-decoration:none;color:var(--green)}
+.countdown:hover{opacity:1}
+.cd-fill{position:absolute;left:0;right:0;bottom:0;z-index:-1;background:linear-gradient(180deg,rgba(212,175,55,.5),rgba(169,133,72,.65))}
+.cd-wave{position:absolute;left:-50%;width:200%;height:9px;top:-4px;border-radius:42%;background:rgba(255,246,214,.75);animation:wv 7s linear infinite}
+.cd-wave.w2{animation-duration:8s;animation-direction:reverse;opacity:.55;top:-2px}
+@keyframes wv{to{transform:rotate(360deg)}}
+.cd-days{display:block;font-weight:600;font-size:.84rem;line-height:1.2;white-space:nowrap}
+.cd-sub{display:block;font-size:.64rem;letter-spacing:.05em;opacity:.85;white-space:nowrap}
+[dir="rtl"] .cd-sub{letter-spacing:0}
+
+:focus-visible{outline:2px solid var(--brass-deep);outline-offset:3px;border-radius:4px}
+
+@media (max-width:1020px){
+  .hero-grid{grid-template-columns:1fr;gap:44px;padding:56px 0 64px}
+  .hero-photo .arch img{height:440px}
+  .hero-badge{inset-inline-start:12px}
+  .about-grid{grid-template-columns:1fr;gap:48px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .practice-grid{grid-template-columns:1fr;gap:40px}
+}
+@media (max-width:900px){
+  nav.main{display:none}
+  .head-cta{display:none}
+  .burger{display:flex}
+}
+@media (max-width:480px){
+  .head-in{gap:10px}
+  .head-actions{gap:8px}
+  .wordmark{font-size:1.02rem}
+  .lang-toggle button{padding:8px 11px}
+}
+@media (max-width:760px){
+  .stats-in{grid-template-columns:repeat(2,1fr)}
+  .stat{border-bottom:1px solid var(--line-light)}
+  .cards{grid-template-columns:1fr}
+  .index2{grid-template-columns:1fr;gap:36px}
+  .steps{grid-template-columns:1fr}
+  .hero-copy{padding-bottom:104px}
+  .hero-photo .arch img{height:380px}
+  .about-photos .main img{height:420px}
+  .about,.treat,.consult,.practice,.faq,.final{padding:72px 0}
+  .wa-float{width:52px;height:52px;right:16px;bottom:16px}
+  .countdown{left:12px;bottom:16px}
+  .p-row .k{flex-basis:92px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="pbar" id="previewBar"><span data-i18n="bar">Private preview prepared for <b>Dr. Yasmin Darwich</b> · Valid until 26 Nov 2026</span></div>
+
+<header>
+  <div class="wrap head-in">
+    <a class="wordmark" href="#top">Dr. Yasmin <span>Darwich</span></a>
+    <nav class="main" aria-label="Main">
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#treatments" data-i18n="navTreat">Treatments</a>
+      <a href="#consultation" data-i18n="navConsult">Consultation</a>
+      <a href="#practice" data-i18n="navPractice">Practice</a>
+      <a href="#faq" data-i18n="navFaq">FAQ</a>
+    </nav>
+    <div class="head-actions">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button id="btnEn" class="active" type="button">EN</button>
+        <button id="btnAr" type="button">عربي</button>
+      </div>
+      <a class="btn btn-brass head-cta" id="headWa" href="https://wa.me/971509538223" target="_blank" rel="noopener" data-i18n="bookBtn">Book a consultation</a>
+      <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Mobile">
+    <a href="#about" data-i18n="navAbout">About</a>
+    <a href="#treatments" data-i18n="navTreat">Treatments</a>
+    <a href="#consultation" data-i18n="navConsult">Consultation</a>
+    <a href="#practice" data-i18n="navPractice">Practice</a>
+    <a href="#faq" data-i18n="navFaq">FAQ</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal in">
+      <p class="eyebrow" data-i18n="heroEyebrow">Specialist Dermatology · Abu Dhabi</p>
+      <h1 data-i18n="heroH1">Your skin, in <em>expert hands.</em></h1>
+      <p class="hero-sub" data-i18n="heroSub"><b>Dr. Yasmin Darwich</b> — Specialist Dermatologist at The Skin Lab, Al Bateen. Medical dermatology and gentle, non-surgical aesthetic care, in Arabic &amp; English.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-brass" id="heroWa" href="https://wa.me/971509538223" target="_blank" rel="noopener" data-i18n="bookWa">Book on WhatsApp</a>
+        <a class="btn btn-ghost" href="#treatments" data-i18n="exploreBtn">Explore treatments</a>
+      </div>
+      <div class="rating-chip"><span class="stars" aria-hidden="true">★★★★★</span><span data-i18n="chip"><b>The Skin Lab</b> · 4.8 on Google · 415 reviews</span></div>
+    </div>
+    <div class="hero-photo reveal in">
+      <div class="arch"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1400&auto=format&fit=crop" alt="Facial treatment at a dermatology clinic" fetchpriority="high"></div>
+      <div class="hero-badge"><div class="n" data-i18n="badgeN">Al Bateen</div><p data-i18n="badgeP">The Skin Lab, Zayed The First Street — open daily 09:00–21:00</p></div>
+    </div>
+  </div>
+  <div class="stats"><div class="wrap stats-in">
+    <div class="stat"><div class="num"><span data-count="7">0</span>+</div><div class="lbl" data-i18n="st1">Years of experience</div></div>
+    <div class="stat"><div class="num"><span data-count="4.8" data-dec="1">0</span></div><div class="lbl" data-i18n="st2">Google rating · The Skin Lab</div></div>
+    <div class="stat"><div class="num"><span data-count="415">0</span></div><div class="lbl" data-i18n="st3">Patient reviews</div></div>
+    <div class="stat"><div class="num" data-i18n="st4n">Arabic · English</div><div class="lbl" data-i18n="st4">Consultations in both languages</div></div>
+  </div></div>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true"><div class="mq-track" id="mqTrack"></div></div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <div class="about-photos">
+        <div class="main"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1200&auto=format&fit=crop" alt="Portrait of a doctor" loading="lazy"></div>
+        <div class="small"><img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=900&auto=format&fit=crop" alt="Calm spa setting" loading="lazy"></div>
+      </div>
+      <p class="photo-cap" data-i18n="cap">Portrait for illustration — meet Dr. Yasmin in person at The Skin Lab.</p>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="aboutEyebrow">About the doctor</p>
+      <h2 data-i18n="aboutH2">Careful medicine, <em>honest advice.</em></h2>
+      <p data-i18n="aboutP1">Dr. Yasmin Darwich is a Specialist Dermatologist holding the Syrian Board in Dermatology &amp; Venereology from Damascus University, with 7 years of clinical experience.</p>
+      <p data-i18n="aboutP2">She treats medical skin conditions — acne, eczema, psoriasis, pigmentation and hair &amp; scalp concerns — alongside non-surgical aesthetic treatments. Every plan starts with a consultation, and the consultation fee is deducted from your treatment.</p>
+      <div class="cred">
+        <div><span data-i18n="c1k">Qualification</span><span data-i18n="c1v">Syrian Board — Dermatology &amp; Venereology</span></div>
+        <div><span data-i18n="c2k">University</span><span data-i18n="c2v">Damascus University</span></div>
+        <div><span data-i18n="c3k">Experience</span><span data-i18n="c3v">7 years</span></div>
+        <div><span data-i18n="c4k">Practice</span><span data-i18n="c4v">The Skin Lab, Al Bateen</span></div>
+        <div><span data-i18n="c5k">Languages</span><span data-i18n="c5v">Arabic &amp; English</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENTS -->
+<section class="treat on-dark" id="treatments">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="treatEyebrow">Treatments</p>
+      <h2 data-i18n="treatH2">Signature <em>treatments</em></h2>
+      <p class="lede" data-i18n="treatLede">Non-surgical, doctor-led care. What suits your skin is decided together, at your consultation — never sold off a shelf.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=1200&auto=format&fit=crop" alt="Facial treatment" loading="lazy"></div><div class="tx"><h3 data-i18n="t1h">Botox &amp; anti-wrinkle</h3><p data-i18n="t1p">Soften expression lines with precise, measured dosing.</p><a class="cardWa" href="https://wa.me/971509538223" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></article>
+      <article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1200&auto=format&fit=crop" alt="Beauty portrait" loading="lazy"></div><div class="tx"><h3 data-i18n="t2h">Dermal fillers</h3><p data-i18n="t2p">Restore volume and definition, keeping your natural look.</p><a class="cardWa" href="https://wa.me/971509538223" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></article>
+      <article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=1200&auto=format&fit=crop" alt="Skincare products" loading="lazy"></div><div class="tx"><h3 data-i18n="t3h">Skin boosters &amp; glow</h3><p data-i18n="t3p">Deep hydration for tired, dull skin that needs its glow back.</p><a class="cardWa" href="https://wa.me/971509538223" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></article>
+      <article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1200&auto=format&fit=crop" alt="Serum bottle" loading="lazy"></div><div class="tx"><h3 data-i18n="t4h">Sculptra &amp; collagen</h3><p data-i18n="t4p">Stimulate your own collagen for gradual, natural firmness.</p><a class="cardWa" href="https://wa.me/971509538223" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></article>
+      <article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1200&auto=format&fit=crop" alt="Dermatology skincare" loading="lazy"></div><div class="tx"><h3 data-i18n="t5h">Medical dermatology</h3><p data-i18n="t5p">Acne, eczema, psoriasis and pigmentation — diagnosed and treated properly.</p><a class="cardWa" href="https://wa.me/971509538223" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></article>
+      <article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop" alt="Relaxing facial" loading="lazy"></div><div class="tx"><h3 data-i18n="t6h">Skin health &amp; facials</h3><p data-i18n="t6p">Doctor-guided skin health, screening and maintenance care.</p><a class="cardWa" href="https://wa.me/971509538223" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></article>
+    </div>
+    <div class="index2">
+      <div class="reveal">
+        <h3 data-i18n="idxMedH">Medical dermatology</h3>
+        <ul>
+          <li><span data-i18n="m1">Acne &amp; acne scarring</span><small data-i18n="ask2">Ask →</small></li>
+          <li><span data-i18n="m2">Eczema &amp; dermatitis</span><small data-i18n="ask2">Ask →</small></li>
+          <li><span data-i18n="m3">Psoriasis</span><small data-i18n="ask2">Ask →</small></li>
+          <li><span data-i18n="m4">Pigmentation &amp; melasma</span><small data-i18n="ask2">Ask →</small></li>
+          <li><span data-i18n="m5">Hair &amp; scalp conditions</span><small data-i18n="ask2">Ask →</small></li>
+          <li><span data-i18n="m6">Skin screening</span><small data-i18n="ask2">Ask →</small></li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <h3 data-i18n="idxAesH">Aesthetic medicine</h3>
+        <ul>
+          <li><span data-i18n="a1">Botox &amp; anti-wrinkle</span><small data-i18n="ask2">Ask →</small></li>
+          <li><span data-i18n="a2">Dermal fillers</span><small data-i18n="ask2">Ask →</small></li>
+          <li><span data-i18n="a3">Skin boosters</span><small data-i18n="ask2">Ask →</small></li>
+          <li><span data-i18n="a4">Sculptra</span><small data-i18n="ask2">Ask →</small></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONSULTATION -->
+<section class="consult" id="consultation">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="consEyebrow">The consultation</p>
+      <h2 data-i18n="consH2">It starts with a <em>conversation.</em></h2>
+      <p style="color:var(--muted);max-width:38rem" data-i18n="consLede">No treatment is booked blind. Four simple steps:</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="no">01</div><h3 data-i18n="s1h">Book on WhatsApp</h3><p data-i18n="s1p">Message The Skin Lab and choose a time that suits you.</p></div>
+      <div class="step reveal"><div class="no">02</div><h3 data-i18n="s2h">Meet &amp; assess</h3><p data-i18n="s2p">Dr. Yasmin examines your skin and listens to your concerns.</p></div>
+      <div class="step reveal"><div class="no">03</div><h3 data-i18n="s3h">Your plan</h3><p data-i18n="s3p">A personal plan is agreed together — options, timing, expectations.</p></div>
+      <div class="step reveal"><div class="no">04</div><h3 data-i18n="s4h">Treatment &amp; follow-up</h3><p data-i18n="s4p">Treatment at the clinic, with follow-up care after.</p></div>
+    </div>
+    <div class="fee-note reveal"><span aria-hidden="true">✦</span><p data-i18n="fee"><b>Good to know:</b> your consultation fee is deducted from your treatment.</p></div>
+  </div>
+</section>
+
+<!-- PRACTICE -->
+<section class="practice" id="practice">
+  <div class="wrap practice-grid">
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="pracEyebrow">The practice</p>
+      <h2 data-i18n="pracH2">The Skin Lab, <em>Al Bateen</em></h2>
+      <div class="p-row"><div class="k" data-i18n="pr1k">Address</div><div class="v" data-i18n="pr1v">216 Zayed The First Street, Al Bateen W37, Abu Dhabi</div></div>
+      <div class="p-row"><div class="k" data-i18n="pr2k">Landmark</div><div class="v" data-i18n="pr2v">In front of Sheikha Fatima Park, beside the BMW showroom</div></div>
+      <div class="p-row"><div class="k" data-i18n="pr3k">Hours</div><div class="v" data-i18n="pr3v">Open daily · 09:00–21:00</div></div>
+      <div class="p-row"><div class="k" data-i18n="pr4k">Phone</div><div class="v"><a href="tel:+97126314432" dir="ltr">(02) 631 4432</a></div></div>
+      <div class="p-row"><div class="k" data-i18n="pr5k">WhatsApp</div><div class="v"><a class="waNum" href="https://wa.me/971509538223" target="_blank" rel="noopener" dir="ltr">+971 50 953 8223</a></div></div>
+      <div class="p-row"><div class="k" data-i18n="pr6k">Email</div><div class="v"><a href="mailto:hello@theskinlab.ae">hello@theskinlab.ae</a></div></div>
+    </div>
+    <div class="map-frame reveal"><iframe title="Map — The Skin Lab, Al Bateen, Abu Dhabi" src="https://www.google.com/maps?q=The%20Skin%20Lab%20Al%20Bateen%20Abu%20Dhabi&output=embed" loading="lazy"></iframe></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="faqEyebrow">Questions</p>
+      <h2 data-i18n="faqH2">Before you <em>book.</em></h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="q1">Do I need a consultation first?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="an1">Yes. Every treatment plan starts with a consultation, so the right treatment is chosen for your skin — and the consultation fee is deducted from your treatment.</p></div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="q2">Where is the clinic?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="an2">The Skin Lab, 216 Zayed The First Street, Al Bateen, Abu Dhabi — in front of Sheikha Fatima Park, beside the BMW showroom.</p></div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="q3">Which languages do you speak?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="an3">Consultations are available in Arabic and English.</p></div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="q4">Does the consultation fee come off my treatment?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="an4">Yes — the consultation fee is deducted from the treatment you go ahead with.</p></div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="q5">Do you treat acne and pigmentation?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="an5">Yes. Medical dermatology — including acne and acne scarring, eczema, psoriasis, pigmentation and hair &amp; scalp conditions — is a core part of Dr. Yasmin's practice.</p></div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="q6">How do I book?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="an6">Message The Skin Lab on WhatsApp at +971 50 953 8223, or call (02) 631 4432. Open daily, 09:00–21:00.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final on-dark">
+  <div class="wrap reveal">
+    <p class="eyebrow" data-i18n="finEyebrow">Book a consultation</p>
+    <h2 data-i18n="finH2">Begin with a <em>consultation.</em></h2>
+    <p data-i18n="finP">Send a WhatsApp message to The Skin Lab — Dr. Yasmin's team replies in Arabic or English.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-brass finWa" href="https://wa.me/971509538223" target="_blank" rel="noopener" data-i18n="bookWa">Book on WhatsApp</a>
+      <a class="btn btn-ghost" href="tel:+97126314432" data-i18n="callBtn">Call (02) 631 4432</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-in">
+      <div>
+        <a class="wordmark" href="#top">Dr. Yasmin <span>Darwich</span></a>
+        <p style="margin-top:10px" data-i18n="footLine">Specialist Dermatologist · The Skin Lab, Al Bateen, Abu Dhabi</p>
+      </div>
+      <div>
+        <p><a class="waNum" href="https://wa.me/971509538223" target="_blank" rel="noopener" dir="ltr">+971 50 953 8223</a></p>
+        <p style="margin-top:6px"><a href="mailto:hello@theskinlab.ae">hello@theskinlab.ae</a></p>
+      </div>
+    </div>
+    <p class="disc" data-i18n="disc">Demo website concept prepared by Safwan Digital. Not an official website.</p>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="https://wa.me/971509538223" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5.1 2.4 7.2L4 29l7.1-2.3c1.5.8 3.2 1.2 4.9 1.2 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm5.9 16.9c-.3.7-1.5 1.4-2.1 1.4-.5.1-1.2.2-4-1-3.4-1.4-5.5-4.8-5.7-5-.2-.2-1.3-1.8-1.3-3.4s.8-2.4 1.1-2.7c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg>
+</a>
+
+<a class="countdown" id="countdown" href="#top" aria-label="Preview countdown">
+  <span class="cd-fill" id="cdFill"><span class="cd-wave"></span><span class="cd-wave w2"></span></span>
+  <span class="cd-days" id="cdDays">10 days left</span>
+  <span class="cd-sub" id="cdSub">Preview · 26 Nov</span>
+</a>
+
+<script>
+const WA_NUM='971509538223';
+const I18N={
+en:{bar:'Private preview prepared for <b>Dr. Yasmin Darwich</b> · Valid until 26 Nov 2026',navAbout:'About',navTreat:'Treatments',navConsult:'Consultation',navPractice:'Practice',navFaq:'FAQ',bookBtn:'Book a consultation',heroEyebrow:'Specialist Dermatology · Abu Dhabi',heroH1:'Your skin, in <em>expert hands.</em>',heroSub:'<b>Dr. Yasmin Darwich</b> — Specialist Dermatologist at The Skin Lab, Al Bateen. Medical dermatology and gentle, non-surgical aesthetic care, in Arabic & English.',bookWa:'Book on WhatsApp',exploreBtn:'Explore treatments',chip:'<b>The Skin Lab</b> · 4.8 on Google · 415 reviews',badgeN:'Al Bateen',badgeP:'The Skin Lab, Zayed The First Street — open daily 09:00–21:00',st1:'Years of experience',st2:'Google rating · The Skin Lab',st3:'Patient reviews',st4n:'Arabic · English',st4:'Consultations in both languages',cap:'Portrait for illustration — meet Dr. Yasmin in person at The Skin Lab.',aboutEyebrow:'About the doctor',aboutH2:'Careful medicine, <em>honest advice.</em>',aboutP1:'Dr. Yasmin Darwich is a Specialist Dermatologist holding the Syrian Board in Dermatology & Venereology from Damascus University, with 7 years of clinical experience.',aboutP2:'She treats medical skin conditions — acne, eczema, psoriasis, pigmentation and hair & scalp concerns — alongside non-surgical aesthetic treatments. Every plan starts with a consultation, and the consultation fee is deducted from your treatment.',c1k:'Qualification',c1v:'Syrian Board — Dermatology & Venereology',c2k:'University',c2v:'Damascus University',c3k:'Experience',c3v:'7 years',c4k:'Practice',c4v:'The Skin Lab, Al Bateen',c5k:'Languages',c5v:'Arabic & English',treatEyebrow:'Treatments',treatH2:'Signature <em>treatments</em>',treatLede:'Non-surgical, doctor-led care. What suits your skin is decided together, at your consultation — never sold off a shelf.',t1h:'Botox & anti-wrinkle',t1p:'Soften expression lines with precise, measured dosing.',t2h:'Dermal fillers',t2p:'Restore volume and definition, keeping your natural look.',t3h:'Skin boosters & glow',t3p:'Deep hydration for tired, dull skin that needs its glow back.',t4h:'Sculptra & collagen',t4p:'Stimulate your own collagen for gradual, natural firmness.',t5h:'Medical dermatology',t5p:'Acne, eczema, psoriasis and pigmentation — diagnosed and treated properly.',t6h:'Skin health & facials',t6p:'Doctor-guided skin health, screening and maintenance care.',ask:'Ask on WhatsApp',ask2:'Ask →',idxMedH:'Medical dermatology',idxAesH:'Aesthetic medicine',m1:'Acne & acne scarring',m2:'Eczema & dermatitis',m3:'Psoriasis',m4:'Pigmentation & melasma',m5:'Hair & scalp conditions',m6:'Skin screening',a1:'Botox & anti-wrinkle',a2:'Dermal fillers',a3:'Skin boosters',a4:'Sculptra',consEyebrow:'The consultation',consH2:'It starts with a <em>conversation.</em>',consLede:'No treatment is booked blind. Four simple steps:',s1h:'Book on WhatsApp',s1p:'Message The Skin Lab and choose a time that suits you.',s2h:'Meet & assess',s2p:'Dr. Yasmin examines your skin and listens to your concerns.',s3h:'Your plan',s3p:'A personal plan is agreed together — options, timing, expectations.',s4h:'Treatment & follow-up',s4p:'Treatment at the clinic, with follow-up care after.',fee:'<b>Good to know:</b> your consultation fee is deducted from your treatment.',pracEyebrow:'The practice',pracH2:'The Skin Lab, <em>Al Bateen</em>',pr1k:'Address',pr1v:'216 Zayed The First Street, Al Bateen W37, Abu Dhabi',pr2k:'Landmark',pr2v:'In front of Sheikha Fatima Park, beside the BMW showroom',pr3k:'Hours',pr3v:'Open daily · 09:00–21:00',pr4k:'Phone',pr5k:'WhatsApp',pr6k:'Email',faqEyebrow:'Questions',faqH2:'Before you <em>book.</em>',q1:'Do I need a consultation first?',an1:'Yes. Every treatment plan starts with a consultation, so the right treatment is chosen for your skin — and the consultation fee is deducted from your treatment.',q2:'Where is the clinic?',an2:'The Skin Lab, 216 Zayed The First Street, Al Bateen, Abu Dhabi — in front of Sheikha Fatima Park, beside the BMW showroom.',q3:'Which languages do you speak?',an3:'Consultations are available in Arabic and English.',q4:'Does the consultation fee come off my treatment?',an4:'Yes — the consultation fee is deducted from the treatment you go ahead with.',q5:'Do you treat acne and pigmentation?',an5:'Yes. Medical dermatology — including acne and acne scarring, eczema, psoriasis, pigmentation and hair & scalp conditions — is a core part of Dr. Yasmin\u2019s practice.',q6:'How do I book?',an6:'Message The Skin Lab on WhatsApp at +971 50 953 8223, or call (02) 631 4432. Open daily, 09:00–21:00.',finEyebrow:'Book a consultation',finH2:'Begin with a <em>consultation.</em>',finP:'Send a WhatsApp message to The Skin Lab — Dr. Yasmin\u2019s team replies in Arabic or English.',callBtn:'Call (02) 631 4432',footLine:'Specialist Dermatologist · The Skin Lab, Al Bateen, Abu Dhabi',disc:'Demo website concept prepared by Safwan Digital. Not an official website.',waMsg:'Hello, I would like to book a consultation with Dr. Yasmin Darwich.',mq:['Botox','Dermal Fillers','Skin Boosters','Sculptra','Acne Care','Pigmentation','Hair & Scalp','Skin Screening'],cdSub:'Preview · 26 Nov',cdEnded:'Preview ended',cdSuffix:'left'},
+ar:{bar:'معاينة خاصة مُعدّة لـ<b>الدكتورة ياسمين درويش</b> · صالحة حتى 26 نوفمبر 2026',navAbout:'عن الدكتورة',navTreat:'العلاجات',navConsult:'الاستشارة',navPractice:'العيادة',navFaq:'الأسئلة الشائعة',bookBtn:'احجز استشارة',heroEyebrow:'أمراض جلدية تخصصية · أبوظبي',heroH1:'بشرتك في <em>أيدٍ خبيرة.</em>',heroSub:'<b>الدكتورة ياسمين درويش</b> — أخصائية الأمراض الجلدية في ذا سكين لاب، البطين. علاج طبي للبشرة وعناية تجميلية غير جراحية، بالعربية والإنجليزية.',bookWa:'احجز عبر واتساب',exploreBtn:'استكشف العلاجات',chip:'<b>ذا سكين لاب</b> · 4.8 على جوجل · 415 تقييماً',badgeN:'البطين',badgeP:'ذا سكين لاب، شارع زايد الأول — مفتوح يومياً 09:00–21:00',st1:'سنوات من الخبرة',st2:'تقييم جوجل · ذا سكين لاب',st3:'تقييمات المرضى',st4n:'العربية · الإنجليزية',st4:'استشارات بكلتا اللغتين',cap:'الصورة للتوضيح — قابل الدكتورة ياسمين شخصياً في ذا سكين لاب.',aboutEyebrow:'عن الدكتورة',aboutH2:'طب دقيق، <em>ونصيحة صادقة.</em>',aboutP1:'الدكتورة ياسمين درويش أخصائية في الأمراض الجلدية، حاصلة على البورد السوري في الأمراض الجلدية والتناسلية من جامعة دمشق، ولديها 7 سنوات من الخبرة السريرية.',aboutP2:'تعالج الحالات الجلدية الطبية — حب الشباب والأكزيما والصدفية والتصبغات ومشاكل الشعر وفروة الرأس — إلى جانب العلاجات التجميلية غير الجراحية. تبدأ كل خطة باستشارة، وتُخصم رسوم الاستشارة من علاجك.',c1k:'المؤهل',c1v:'البورد السوري — الأمراض الجلدية والتناسلية',c2k:'الجامعة',c2v:'جامعة دمشق',c3k:'الخبرة',c3v:'7 سنوات',c4k:'العيادة',c4v:'ذا سكين لاب، البطين',c5k:'اللغات',c5v:'العربية والإنجليزية',treatEyebrow:'العلاجات',treatH2:'علاجات <em>مميزة</em>',treatLede:'عناية غير جراحية بقيادة طبيبة. ما يناسب بشرتك يُقرَّر معاً في الاستشارة — ولا يُباع جاهزاً من على الرف.',t1h:'البوتوكس ومضاد التجاعيد',t1p:'تنعيم خطوط التعبير بجرعات دقيقة ومدروسة.',t2h:'فيلر الوجه',t2p:'استعادة الامتلاء والتحديد مع الحفاظ على مظهرك الطبيعي.',t3h:'إبر النضارة والترطيب',t3p:'ترطيب عميق للبشرة المتعبة والباهتة لاستعادة إشراقها.',t4h:'سكالبترا والكولاجين',t4p:'تحفيز كولاجين بشرتك الطبيعي لشدّ تدريجي وطبيعي.',t5h:'الأمراض الجلدية الطبية',t5p:'حب الشباب والأكزيما والصدفية والتصبغات — تُشخَّص وتُعالج بشكل صحيح.',t6h:'صحة البشرة والفيشل',t6p:'عناية بصحة البشرة وفحصها ومتابعتها بتوجيه طبي.',ask:'اسأل عبر واتساب',ask2:'اسأل ←',idxMedH:'الأمراض الجلدية الطبية',idxAesH:'الطب التجميلي',m1:'حب الشباب وآثاره',m2:'الأكزيما والتهاب الجلد',m3:'الصدفية',m4:'التصبغات والكلف',m5:'مشاكل الشعر وفروة الرأس',m6:'فحص الجلد',a1:'البوتوكس ومضاد التجاعيد',a2:'فيلر الوجه',a3:'إبر النضارة',a4:'سكالبترا',consEyebrow:'الاستشارة',consH2:'تبدأ <em>بمحادثة.</em>',consLede:'لا يُحجز أي علاج دون تقييم. أربع خطوات بسيطة:',s1h:'احجز عبر واتساب',s1p:'راسل ذا سكين لاب واختر الوقت المناسب لك.',s2h:'اللقاء والتقييم',s2p:'تفحص الدكتورة ياسمين بشرتك وتستمع إلى ما يقلقك.',s3h:'خطتك الخاصة',s3p:'تُتفق الخطة الشخصية معاً — الخيارات والتوقيت والتوقعات.',s4h:'العلاج والمتابعة',s4p:'العلاج في العيادة، مع متابعة ورعاية بعد ذلك.',fee:'<b>معلومة مفيدة:</b> تُخصم رسوم الاستشارة من تكلفة علاجك.',pracEyebrow:'العيادة',pracH2:'ذا سكين لاب، <em>البطين</em>',pr1k:'العنوان',pr1v:'216 شارع زايد الأول، البطين W37، أبوظبي',pr2k:'علامة مميزة',pr2v:'مقابل حديقة الشيخة فاطمة، بجانب صالة عرض BMW',pr3k:'ساعات العمل',pr3v:'مفتوح يومياً · 09:00–21:00',pr4k:'الهاتف',pr5k:'واتساب',pr6k:'البريد الإلكتروني',faqEyebrow:'أسئلة',faqH2:'قبل أن <em>تحجز.</em>',q1:'هل أحتاج إلى استشارة أولاً؟',an1:'نعم. تبدأ كل خطة علاج باستشارة، حتى يُختار العلاج المناسب لبشرتك — وتُخصم رسوم الاستشارة من علاجك.',q2:'أين تقع العيادة؟',an2:'ذا سكين لاب، 216 شارع زايد الأول، البطين، أبوظبي — مقابل حديقة الشيخة فاطمة، بجانب صالة عرض BMW.',q3:'ما اللغات المتوفرة؟',an3:'الاستشارات متوفرة بالعربية والإنجليزية.',q4:'هل تُخصم رسوم الاستشارة من العلاج؟',an4:'نعم — تُخصم رسوم الاستشارة من العلاج الذي تختاره.',q5:'هل تعالجون حب الشباب والتصبغات؟',an5:'نعم. الأمراض الجلدية الطبية — بما فيها حب الشباب وآثاره والأكزيما والصدفية والتصبغات ومشاكل الشعر وفروة الرأس — جزء أساسي من ممارسة الدكتورة ياسمين.',q6:'كيف أحجز؟',an6:'راسل ذا سكين لاب عبر واتساب على +971 50 953 8223، أو اتصل على (02) 631 4432. مفتوح يومياً 09:00–21:00.',finEyebrow:'احجز استشارة',finH2:'ابدأ <em>باستشارة.</em>',finP:'أرسل رسالة واتساب إلى ذا سكين لاب — يرد فريق الدكتورة ياسمين بالعربية أو الإنجليزية.',callBtn:'اتصل (02) 631 4432',footLine:'أخصائية الأمراض الجلدية · ذا سكين لاب، البطين، أبوظبي',disc:'موقع تجريبي من إعداد صفوان ديجيتال. ليس موقعاً رسمياً.',waMsg:'مرحباً، أود حجز استشارة مع الدكتورة ياسمين درويش.',mq:['البوتوكس','فيلر الوجه','إبر النضارة','سكالبترا','علاج حب الشباب','التصبغات','الشعر وفروة الرأس','فحص الجلد'],cdSub:'معاينة · 26 نوفمبر',cdEnded:'انتهت المعاينة',cdSuffix:'متبقية'}
+};
+let LANG='en';
+function waLink(){return 'https://wa.me/'+WA_NUM+'?text='+encodeURIComponent(I18N[LANG].waMsg)}
+function buildMarquee(){const items=I18N[LANG].mq;const seq=items.map(t=>'<span>'+t+' <b>✦</b></span>').join('');document.getElementById('mqTrack').innerHTML=seq+seq}
+function applyLang(l){
+  LANG=l;const d=I18N[l];
+  document.documentElement.lang=(l==='ar')?'ar':'en';
+  document.documentElement.dir=(l==='ar')?'rtl':'ltr';
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(d[k]!==undefined)el.innerHTML=d[k]});
+  document.querySelectorAll('.cardWa, .waNum').forEach(a=>{if(a.classList.contains('cardWa'))a.href=waLink()});
+  ['headWa','heroWa','waFloat'].forEach(id=>{const a=document.getElementById(id);if(a)a.href=waLink()});
+  document.querySelector('.finWa').href=waLink();
+  document.getElementById('btnEn').classList.toggle('active',l==='en');
+  document.getElementById('btnAr').classList.toggle('active',l==='ar');
+  buildMarquee();tickCountdown();
+}
+document.getElementById('btnEn').addEventListener('click',()=>applyLang('en'));
+document.getElementById('btnAr').addEventListener('click',()=>applyLang('ar'));
+
+/* mobile nav */
+const burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+burger.addEventListener('click',()=>{const open=mnav.classList.toggle('open');burger.setAttribute('aria-expanded',open)});
+mnav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mnav.classList.remove('open')));
+
+/* preview bar height sync */
+function syncBar(){const b=document.getElementById('previewBar');if(b)document.documentElement.style.setProperty('--bar-h',b.offsetHeight+'px')}
+window.addEventListener('resize',syncBar);syncBar();
+
+/* reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* counters */
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;cio.unobserve(e.target);
+  const end=parseFloat(e.target.dataset.count),dec=parseInt(e.target.dataset.dec||'0'),t0=performance.now(),dur=1400;
+  (function step(t){const p=Math.min((t-t0)/dur,1),v=end*(1-Math.pow(1-p,3));e.target.textContent=v.toFixed(dec);if(p<1)requestAnimationFrame(step)})(t0);
+}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
+/* faq */
+document.querySelectorAll('.faq-item').forEach(item=>{
+  const q=item.querySelector('.faq-q'),a=item.querySelector('.faq-a');
+  q.addEventListener('click',()=>{
+    const open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(o=>{o.classList.remove('open');o.querySelector('.faq-a').style.maxHeight='0';o.querySelector('.faq-q').setAttribute('aria-expanded','false')});
+    if(!open){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';q.setAttribute('aria-expanded','true')}
+  });
+});
+
+/* liquid countdown: 16 Nov 2026 00:00 → 26 Nov 2026 23:59 Asia/Dubai (UTC+4) */
+const CD_START=Date.UTC(2026,10,15,20,0,0), CD_END=Date.UTC(2026,10,26,19,59,59);
+function tickCountdown(){
+  const now=Date.now(),d=I18N[LANG];
+  const daysEl=document.getElementById('cdDays'),subEl=document.getElementById('cdSub'),fill=document.getElementById('cdFill');
+  if(now>CD_END){daysEl.textContent=d.cdEnded;subEl.textContent='Safwan Digital';fill.style.height='100%';return}
+  const days=Math.max(0,Math.ceil((CD_END-now)/86400000));
+  daysEl.textContent=(LANG==='ar')?(days+' أيام '+d.cdSuffix):(days+' days '+d.cdSuffix);
+  subEl.textContent=d.cdSub;
+  const pct=Math.min(100,Math.max(0,(now-CD_START)/(CD_END-CD_START)*100));
+  fill.style.height=pct+'%';
+}
+tickCountdown();setInterval(tickCountdown,60000);
+buildMarquee();
+</script>
+</body>
+</html>
