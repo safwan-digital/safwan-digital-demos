@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Dr. Renata Costa — Dermatologist & Aesthetic Specialist, Abu Dhabi</title>
+<meta name="description" content="Dr. Renata Costa — Brazilian board-certified dermatologist in Abu Dhabi. Botox, fillers, skin rejuvenation and hair restoration at Amaryllis Polyclinic, Marina Village.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#FAF6EE; --ivory2:#F1E9D8; --paper:#FFFDF8;
+  --ink:#211C12; --ink2:#5C5540; --gold:#A98548; --gold2:#C6A15B; --line:#E4DABF;
+  --night:#17130B;
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,sans-serif; --ar:'IBM Plex Sans Arabic',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--ivory);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:64px}
+html[lang="ar"] body{font-family:var(--ar)}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3,html[lang="ar"] .big-q{font-family:var(--ar);letter-spacing:0}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,100% - 48px);margin-inline:auto}
+section{padding:110px 0;scroll-margin-top:90px}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+html[lang="ar"] .eyebrow{letter-spacing:0}
+h1,h2{font-family:var(--serif);font-weight:400;line-height:1.04}
+h2{font-size:clamp(2.1rem,4.6vw,3.4rem);margin:18px 0 16px}
+h2 em,h1 em{font-style:italic;color:var(--gold)}
+.lede{color:var(--ink2);font-size:1.07rem;max-width:58ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 32px;border-radius:999px;font-weight:600;font-size:.98rem;min-height:54px;transition:transform .25s,box-shadow .25s;border:1px solid transparent;cursor:pointer}
+.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#FFFDF6;box-shadow:0 16px 32px -12px rgba(169,133,72,.55)}
+.btn-gold:hover{transform:translateY(-2px)}
+.btn-line{border-color:rgba(250,246,238,.4);color:#FAF6EE;background:transparent}
+.btn-line:hover{border-color:var(--gold2)}
+/* preview bar */
+.pbar{position:fixed;inset-inline:0;top:0;z-index:130;background:var(--night);color:#EFE7D2;font-size:.79rem;text-align:center;padding:9px 44px}
+.pbar b{color:var(--gold2)}
+/* header — minimal, over hero */
+header{position:fixed;inset-inline:0;top:35px;z-index:120;transition:background .3s,box-shadow .3s}
+header.scrolled{background:rgba(250,246,238,.94);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+header.scrolled .wordmark,header.scrolled nav.main a{color:var(--ink)}
+header.scrolled .lang-btn{border-color:var(--line);color:var(--ink);background:var(--paper)}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+.wordmark{font-family:var(--serif);font-size:1.3rem;font-weight:600;line-height:1.05;color:#FAF6EE;transition:color .3s}
+.wordmark span{display:block;font-family:var(--sans);font-size:.58rem;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--gold2)}
+html[lang="ar"] .wordmark span{letter-spacing:0;font-family:var(--ar)}
+nav.main{display:flex;gap:32px;font-size:.92rem;font-weight:500}
+nav.main a{color:rgba(250,246,238,.85)}
+nav.main a:hover{color:var(--gold2)}
+.head-actions{display:flex;align-items:center;gap:10px}
+.lang-btn{border:1px solid rgba(250,246,238,.4);background:transparent;color:#FAF6EE;border-radius:999px;padding:10px 16px;font-weight:600;font-size:.85rem;cursor:pointer;min-height:44px;transition:all .3s}
+/* HERO — full-screen, night, silhouette */
+.hero{min-height:100svh;background:radial-gradient(1000px 620px at 78% 30%,rgba(198,161,91,.17),transparent 60%),linear-gradient(160deg,#221B0F 0%,var(--night) 55%,#100D07 100%);color:#FAF6EE;display:flex;align-items:center;padding:150px 0 90px;position:relative;overflow:hidden}
+.hero .cols{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center;width:100%}
+.hero h1{font-size:clamp(2.7rem,6.2vw,4.9rem);margin:24px 0 22px;font-weight:300}
+.hero h1 em{font-weight:400}
+.hero .sub{color:#D8CFB4;font-size:1.1rem;max-width:52ch}
+.hero .sub b{color:#FAF6EE}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.hero-meta{margin-top:30px;font-size:.88rem;color:#B9AE8F;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.hero-meta b{color:var(--gold2)}
+.silhouette{position:relative;display:flex;justify-content:center}
+.silhouette .halo{position:absolute;width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(198,161,91,.32),transparent 65%);top:2%}
+.silhouette .arch{position:relative;width:min(400px,86%);border-radius:230px 230px 24px 24px;border:1px solid rgba(198,161,91,.45);background:linear-gradient(180deg,rgba(198,161,91,.10),rgba(198,161,91,.02));padding:34px 30px 0;overflow:hidden}
+.silhouette svg{width:100%;height:auto;display:block}
+.silhouette .tag{position:absolute;bottom:16px;inset-inline:0;text-align:center;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold2)}
+html[lang="ar"] .silhouette .tag{letter-spacing:0}
+/* philosophy — results before about */
+.philosophy{background:var(--ivory)}
+.big-q{font-family:var(--serif);font-weight:300;font-size:clamp(1.9rem,4.2vw,3.1rem);line-height:1.18;max-width:22ch}
+.big-q em{font-style:italic;color:var(--gold)}
+.q-row{display:grid;grid-template-columns:1fr 1fr;gap:56px;padding:44px 0;border-bottom:1px solid var(--line)}
+.q-row:first-child{padding-top:0}
+.q-row:last-child{border-bottom:0;padding-bottom:0}
+.q-note{color:var(--ink2);font-size:1rem;align-self:center}
+.q-note b{color:var(--ink)}
+/* treatments gallery — horizontal scroll */
+.gallery-sec{background:var(--paper);border-block:1px solid var(--line);padding-bottom:90px}
+.g-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.g-hint{font-size:.85rem;color:var(--ink2)}
+.gallery{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:40px 4px 18px;scrollbar-width:thin;scrollbar-color:var(--gold) var(--ivory2)}
+.gallery::-webkit-scrollbar{height:6px}
+.gallery::-webkit-scrollbar-thumb{background:var(--gold);border-radius:99px}
+.g-card{scroll-snap-align:start;flex:0 0 min(350px,82vw);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--ivory);display:flex;flex-direction:column}
+.g-card .ph{height:250px;overflow:hidden}
+.g-card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.g-card:hover .ph img{transform:scale(1.05)}
+.g-card .tx{padding:24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.g-card .no{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:.95rem}
+.g-card h3{font-family:var(--serif);font-size:1.42rem;font-weight:500}
+html[lang="ar"] .g-card h3{font-family:var(--ar)}
+.g-card p{color:var(--ink2);font-size:.95rem;flex:1}
+.g-card a{font-weight:600;color:var(--gold);font-size:.93rem}
+/* about — credentials, quiet */
+.about .cols{display:grid;grid-template-columns:.92fr 1.08fr;gap:64px;align-items:center}
+.about .photo{border-radius:24px;overflow:hidden;border:1px solid var(--line)}
+.about .photo img{height:540px;width:100%;object-fit:cover}
+.cred{margin-top:30px;border-top:1px solid var(--line)}
+.cred .row{display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-bottom:1px solid var(--line);font-size:.96rem}
+.cred .k{color:var(--ink2)}
+.cred .v{font-weight:600;text-align:end}
+/* consultation — inline numbered line */
+.consult{background:var(--night);color:#F3ECDD}
+.consult h2{color:#FAF6EE}
+.consult .lede{color:#CFC6AE}
+.line-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:52px}
+.lstep{border-top:1px solid rgba(198,161,91,.5);padding-top:22px}
+.lstep .num{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--gold2)}
+.lstep h3{font-size:1.05rem;margin:8px 0 6px;color:#FAF6EE}
+.lstep p{color:#CFC6AE;font-size:.94rem}
+/* practice */
+.practice .cols{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.p-row{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);font-size:.98rem}
+.p-row .k{color:var(--ink2)}
+.p-row .v{font-weight:600;text-align:end}
+.p-row a:hover{color:var(--gold)}
+.map-frame{border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:330px}
+.map-frame iframe{width:100%;height:100%;min-height:330px;border:0}
+/* final */
+.final{text-align:center;background:radial-gradient(760px 400px at 50% 0,rgba(198,161,91,.16),transparent 65%),var(--ivory2);border-top:1px solid var(--line)}
+.final h2{max-width:22ch;margin-inline:auto}
+.final .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+/* footer */
+footer{background:#100D07;color:#B9AE8F;padding:54px 0 110px;font-size:.92rem}
+.foot-in{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}
+footer .wordmark{color:#FAF6EE}
+footer a:hover{color:var(--gold2)}
+.disc{margin-top:30px;padding-top:18px;border-top:1px solid rgba(243,236,221,.13);font-size:.8rem;color:#857C62}
+/* sticky bottom bar — timer + the one booking action */
+.stickybar{position:fixed;inset-inline:0;bottom:0;z-index:125;background:rgba(23,19,11,.92);backdrop-filter:blur(16px);border-top:1px solid rgba(198,161,91,.4);color:#F3ECDD}
+.stickybar .in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0;position:relative}
+.sb-timer{font-size:.9rem;display:flex;align-items:center;gap:12px;min-width:0}
+.sb-timer .days{font-weight:700;color:#FAF6EE;white-space:nowrap}
+.sb-timer .ends{color:#B9AE8F;font-size:.8rem;white-space:nowrap}
+.sb-fill{position:absolute;top:-1px;inset-inline-start:0;height:2px;background:linear-gradient(90deg,var(--gold2),var(--gold));width:100%}
+.sb-book{padding:12px 26px;min-height:48px;font-size:.94rem;flex-shrink:0}
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+/* responsive */
+@media (max-width:1020px){
+  .hero .cols{grid-template-columns:1fr;gap:44px}
+  .hero{padding-top:132px;text-align:center}
+  .hero .sub{margin-inline:auto}
+  .hero-ctas,.hero-meta{justify-content:center}
+  .silhouette .arch{width:min(340px,84%)}
+  .about .cols,.practice .cols{grid-template-columns:1fr;gap:40px}
+  .about .photo img{height:400px}
+  .q-row{grid-template-columns:1fr;gap:14px}
+  .line-steps{grid-template-columns:1fr;gap:26px}
+}
+@media (max-width:900px){nav.main{display:none}}
+@media (max-width:640px){
+  section{padding:76px 0}
+  .wrap{width:calc(100% - 36px)}
+  .pbar{font-size:.72rem;padding:8px 12px}
+  header{top:32px}
+  .hero h1{font-size:2.42rem}
+  .hero{padding-top:120px}
+  .sb-timer .ends{display:none}
+  .sb-book{padding:11px 20px}
+  footer{padding-bottom:120px}
+}
+@media (max-width:760px) and (max-height:700px){
+  .hero{padding-top:104px;min-height:auto}
+  .hero h1{font-size:2.05rem;margin:16px 0 14px}
+  .hero .sub{font-size:.97rem}
+  .hero-ctas{margin-top:22px}
+  .hero-meta{margin-top:18px}
+  .silhouette .arch{width:min(250px,72%);padding-top:22px}
+}
+</style>
+</head>
+<body id="top">
+
+<div class="pbar" data-i18n="bar">Private preview prepared for <b>Dr. Renata Costa</b> · Valid until 3 Dec 2026</div>
+
+<header id="header">
+  <div class="wrap head-in">
+    <a class="wordmark" href="#top">Renata Costa<span data-i18n="wmSub">Dermatologist</span></a>
+    <nav class="main">
+      <a href="#philosophy" data-i18n="navPhil">Philosophy</a>
+      <a href="#treatments" data-i18n="navTreat">Treatments</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#practice" data-i18n="navPractice">Practice</a>
+    </nav>
+    <div class="head-actions">
+      <button class="lang-btn" id="langBtn" type="button" aria-label="Switch language">عربي</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap cols">
+    <div>
+      <p class="eyebrow" data-i18n="heroEyebrow">Dermatologist & Aesthetic Specialist · Abu Dhabi</p>
+      <h1 data-i18n="heroH1">The best Botox is the one <em>nobody notices.</em></h1>
+      <p class="sub" data-i18n="heroSub"><b>Dr. Renata Costa</b> — Brazilian board-certified dermatologist, 23+ years of experience, now at Amaryllis Polyclinic, Marina Village. Bespoke, safety-first aesthetic care, in English & Arabic.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="https://wa.me/971566401128" target="_blank" rel="noopener" data-i18n="bookWa">Book on WhatsApp</a>
+        <a class="btn btn-line" href="#treatments" data-i18n="exploreBtn">See the treatments</a>
+      </div>
+      <p class="hero-meta" data-i18n="chip"><b>91K followers</b><span>on Instagram · @drrenatacostaabudhabi</span></p>
+    </div>
+    <div class="silhouette" aria-hidden="true">
+      <div class="halo"></div>
+      <div class="arch">
+        <svg viewBox="0 0 300 360" role="img" aria-label="Doctor portrait silhouette">
+          <defs>
+            <linearGradient id="sil" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#2B2313"/>
+              <stop offset="1" stop-color="#0E0B06"/>
+            </linearGradient>
+          </defs>
+          <circle cx="150" cy="30" r="17" fill="url(#sil)"/>
+          <path fill="url(#sil)" stroke="rgba(198,161,91,.5)" stroke-width="1.4" d="M150 38c27 0 44 21 44 47 0 17-7 30-16 38 4 3 10 6 17 8 34 8 51 30 59 62 6 24 9 55 10 97l1 70H35l1-70c1-42 4-73 10-97 8-32 25-54 59-62 7-2 13-5 17-8-9-8-16-21-16-38 0-26 17-47 44-47z"/>
+          <path d="M124 138l26 44 26-44 14 4-40 66-40-66z" fill="#FAF6EE" opacity=".92"/>
+          <path d="M118 176c0 34 14 54 32 54s32-20 32-54" fill="none" stroke="#C6A15B" stroke-width="3.4" stroke-linecap="round"/>
+          <circle cx="118" cy="170" r="5.5" fill="#C6A15B"/>
+          <circle cx="182" cy="170" r="5.5" fill="#C6A15B"/>
+          <circle cx="150" cy="233" r="6.5" fill="#C6A15B"/>
+        </svg>
+        <div class="tag" data-i18n="silTag">Dr. Renata Costa</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="philosophy" id="philosophy">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="philEyebrow">Her philosophy</p>
+    <div style="margin-top:36px">
+      <div class="q-row reveal">
+        <p class="big-q" data-i18n="q1">“Every face is <em>a different story.</em>”</p>
+        <p class="q-note" data-i18n="q1n">No standard packages. Your plan is built around your anatomy, your skin and your goals — <b>bespoke results, rooted in safety.</b></p>
+      </div>
+      <div class="q-row reveal">
+        <p class="big-q" data-i18n="q2">“I don't say yes to <em>everyone</em> who sits in my chair.”</p>
+        <p class="q-note" data-i18n="q2n">If a treatment isn't right for you, Dr. Renata will tell you — and explain what is. <b>Honest advice comes before any booking.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENTS GALLERY -->
+<section class="gallery-sec" id="treatments">
+  <div class="wrap">
+    <div class="g-head">
+      <div>
+        <p class="eyebrow" data-i18n="treatEyebrow">Treatments</p>
+        <h2 data-i18n="treatH2">The <em>treatments</em></h2>
+      </div>
+      <p class="g-hint" data-i18n="gHint">Scroll sideways →</p>
+    </div>
+    <div class="gallery" id="gallery">
+      <article class="g-card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=1200&auto=format&fit=crop" alt="Facial treatment" loading="lazy"></div><div class="tx"><span class="no">01</span><h3 data-i18n="t1h">Botox & anti-wrinkle</h3><p data-i18n="t1p">Soften lines while keeping your expressions — forehead, crow's feet, gummy smile and chin.</p><a href="https://wa.me/971566401128" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></article>
+      <article class="g-card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1200&auto=format&fit=crop" alt="Beauty portrait" loading="lazy"></div><div class="tx"><span class="no">02</span><h3 data-i18n="t2h">Dermal fillers</h3><p data-i18n="t2p">Restore volume and balance — including under-eye filler for a rested, natural look.</p><a href="https://wa.me/971566401128" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></article>
+      <article class="g-card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1200&auto=format&fit=crop" alt="Serum bottle" loading="lazy"></div><div class="tx"><span class="no">03</span><h3 data-i18n="t3h">Skin rejuvenation & exosomes</h3><p data-i18n="t3p">Regenerative treatments that support collagen and bring back your skin's natural glow.</p><a href="https://wa.me/971566401128" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></article>
+      <article class="g-card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1200&auto=format&fit=crop" alt="Dermatology skincare" loading="lazy"></div><div class="tx"><span class="no">04</span><h3 data-i18n="t4h">Hair restoration — Gold Hair</h3><p data-i18n="t4p">Dr. Renata's bespoke Gold Hair protocol, tackling hair loss at the root.</p><a href="https://wa.me/971566401128" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></article>
+      <article class="g-card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=1200&auto=format&fit=crop" alt="Skincare products" loading="lazy"></div><div class="tx"><span class="no">05</span><h3 data-i18n="t5h">Pigmentation care</h3><p data-i18n="t5p">Careful, staged treatment for dark spots and post-inflammatory pigmentation — skin prepared first, always.</p><a href="https://wa.me/971566401128" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></article>
+      <article class="g-card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop" alt="Relaxing facial" loading="lazy"></div><div class="tx"><span class="no">06</span><h3 data-i18n="t6h">Scar & texture regeneration</h3><p data-i18n="t6p">Advanced therapies — including laser and radiofrequency microneedling — for scars and uneven texture.</p><a href="https://wa.me/971566401128" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap cols">
+    <div class="photo reveal"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1200&auto=format&fit=crop" alt="Facial treatment" loading="lazy"></div>
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="aboutEyebrow">About the doctor</p>
+      <h2 data-i18n="aboutH2">Quiet expertise, <em>honest hands.</em></h2>
+      <p class="lede" data-i18n="aboutP1">Dr. Renata Costa is a Brazilian board-certified dermatologist and aesthetic specialist with more than 23 years of experience. Her work centres on injectables, skin rejuvenation and hair restoration — always personalised, always safety-first.</p>
+      <div class="cred">
+        <div class="row"><span class="k" data-i18n="c1k">Qualification</span><span class="v" data-i18n="c1v">Board Certified — Dermatology (Brazil)</span></div>
+        <div class="row"><span class="k" data-i18n="c2k">Experience</span><span class="v" data-i18n="c2v">23+ years</span></div>
+        <div class="row"><span class="k" data-i18n="c3k">Expertise</span><span class="v" data-i18n="c3v">Injectables · Skin rejuvenation · Hair restoration</span></div>
+        <div class="row"><span class="k" data-i18n="c4k">Practice</span><span class="v" data-i18n="c4v">Amaryllis Polyclinic, Marina Village</span></div>
+        <div class="row"><span class="k" data-i18n="c5k">Languages</span><span class="v" data-i18n="c5v">English & Arabic</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONSULTATION -->
+<section class="consult" id="consult">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="consEyebrow">The consultation</p>
+    <h2 data-i18n="consH2">It starts with <em>a conversation.</em></h2>
+    <p class="lede" data-i18n="consLede">No treatment is booked blind.</p>
+    <div class="line-steps">
+      <div class="lstep reveal"><div class="num">01</div><h3 data-i18n="s1h">Book on WhatsApp</h3><p data-i18n="s1p">Message Dr. Renata's team and choose a time that suits you.</p></div>
+      <div class="lstep reveal"><div class="num">02</div><h3 data-i18n="s2h">Meet & assess</h3><p data-i18n="s2p">Dr. Renata examines your skin, listens, and agrees a bespoke plan with you.</p></div>
+      <div class="lstep reveal"><div class="num">03</div><h3 data-i18n="s3h">Treatment & follow-up</h3><p data-i18n="s3p">Treatment at the clinic, with follow-up care after.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICE -->
+<section class="practice" id="practice">
+  <div class="wrap cols">
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="pracEyebrow">The practice</p>
+      <h2 data-i18n="pracH2">Amaryllis Polyclinic, <em>Marina Village</em></h2>
+      <div class="p-row"><div class="k" data-i18n="pr1k">Address</div><div class="v" data-i18n="pr1v">Villa A05, Marina Village, Abu Dhabi</div></div>
+      <div class="p-row"><div class="k" data-i18n="pr2k">Phone</div><div class="v"><a href="tel:+971566401128" dir="ltr">+971 56 640 1128</a></div></div>
+      <div class="p-row"><div class="k" data-i18n="pr3k">WhatsApp</div><div class="v"><a href="https://wa.me/971566401128" target="_blank" rel="noopener" dir="ltr">+971 56 640 1128</a></div></div>
+      <div class="p-row"><div class="k" data-i18n="pr4k">Instagram</div><div class="v"><a href="https://www.instagram.com/drrenatacostaabudhabi/" target="_blank" rel="noopener" dir="ltr">@drrenatacostaabudhabi</a></div></div>
+    </div>
+    <div class="map-frame reveal"><iframe title="Map — Amaryllis Polyclinic, Marina Village, Abu Dhabi" src="https://www.google.com/maps?q=Amaryllis+Polyclinic+Marina+Village+Abu+Dhabi&output=embed" loading="lazy"></iframe></div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="finEyebrow">Book a consultation</p>
+    <h2 data-i18n="finH2">Begin with <em>a conversation.</em></h2>
+    <p class="lede" style="margin-inline:auto" data-i18n="finP">Send a WhatsApp message — Dr. Renata's team replies in English or Arabic.</p>
+    <div class="ctas">
+      <a class="btn btn-gold" href="https://wa.me/971566401128" target="_blank" rel="noopener" data-i18n="bookWa">Book on WhatsApp</a>
+      <a class="btn btn-ghost" style="border-color:var(--line);background:rgba(255,253,248,.7)" href="tel:+971566401128" data-i18n="callBtn">Call 056 640 1128</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-in">
+      <div>
+        <a class="wordmark" href="#top">Renata Costa<span data-i18n="wmSub">Dermatologist</span></a>
+        <p style="margin-top:10px" data-i18n="footLine">Dermatologist & Aesthetic Specialist · Amaryllis Polyclinic, Abu Dhabi</p>
+      </div>
+      <div>
+        <p><a href="https://wa.me/971566401128" target="_blank" rel="noopener" dir="ltr">+971 56 640 1128</a></p>
+        <p style="margin-top:6px"><a href="https://www.instagram.com/drrenatacostaabudhabi/" target="_blank" rel="noopener" dir="ltr">Instagram · @drrenatacostaabudhabi</a></p>
+      </div>
+    </div>
+    <p class="disc" data-i18n="disc">Demo website concept prepared by Safwan Digital. Not an official website.</p>
+  </div>
+</footer>
+
+<!-- STICKY BAR: preview timer + the one booking action -->
+<div class="stickybar">
+  <div class="wrap in">
+    <span class="sb-fill" id="sbFill"></span>
+    <div class="sb-timer"><span class="days" id="sbDays">10 days left</span><span class="ends" id="sbEnds">Preview ends 3 Dec</span></div>
+    <a class="btn btn-gold sb-book" href="https://wa.me/971566401128" target="_blank" rel="noopener" data-i18n="bookWa">Book on WhatsApp</a>
+  </div>
+</div>
+
+<script>
+const WA_MSG = {en:'Hello, I would like to book a consultation with Dr. Renata Costa.', ar:'مرحباً، أود حجز استشارة مع الدكتورة ريناتا كوستا.'};
+const I18N = {
+en:{bar:'Private preview prepared for <b>Dr. Renata Costa</b> · Valid until 3 Dec 2026',wmSub:'Dermatologist',navPhil:'Philosophy',navTreat:'Treatments',navAbout:'About',navPractice:'Practice',heroEyebrow:'Dermatologist & Aesthetic Specialist · Abu Dhabi',heroH1:'The best Botox is the one <em>nobody notices.</em>',heroSub:'<b>Dr. Renata Costa</b> — Brazilian board-certified dermatologist, 23+ years of experience, now at Amaryllis Polyclinic, Marina Village. Bespoke, safety-first aesthetic care, in English & Arabic.',bookWa:'Book on WhatsApp',exploreBtn:'See the treatments',chip:'<b>91K followers</b><span>on Instagram · @drrenatacostaabudhabi</span>',silTag:'Dr. Renata Costa',philEyebrow:'Her philosophy',q1:'“Every face is <em>a different story.</em>”',q1n:'No standard packages. Your plan is built around your anatomy, your skin and your goals — <b>bespoke results, rooted in safety.</b>',q2:'“I don\'t say yes to <em>everyone</em> who sits in my chair.”',q2n:'If a treatment isn\'t right for you, Dr. Renata will tell you — and explain what is. <b>Honest advice comes before any booking.</b>',treatEyebrow:'Treatments',treatH2:'The <em>treatments</em>',gHint:'Scroll sideways →',t1h:'Botox & anti-wrinkle',t1p:'Soften lines while keeping your expressions — forehead, crow\'s feet, gummy smile and chin.',t2h:'Dermal fillers',t2p:'Restore volume and balance — including under-eye filler for a rested, natural look.',t3h:'Skin rejuvenation & exosomes',t3p:'Regenerative treatments that support collagen and bring back your skin\'s natural glow.',t4h:'Hair restoration — Gold Hair',t4p:'Dr. Renata\'s bespoke Gold Hair protocol, tackling hair loss at the root.',t5h:'Pigmentation care',t5p:'Careful, staged treatment for dark spots and post-inflammatory pigmentation — skin prepared first, always.',t6h:'Scar & texture regeneration',t6p:'Advanced therapies — including laser and radiofrequency microneedling — for scars and uneven texture.',ask:'Ask on WhatsApp',aboutEyebrow:'About the doctor',aboutH2:'Quiet expertise, <em>honest hands.</em>',aboutP1:'Dr. Renata Costa is a Brazilian board-certified dermatologist and aesthetic specialist with more than 23 years of experience. Her work centres on injectables, skin rejuvenation and hair restoration — always personalised, always safety-first.',c1k:'Qualification',c1v:'Board Certified — Dermatology (Brazil)',c2k:'Experience',c2v:'23+ years',c3k:'Expertise',c3v:'Injectables · Skin rejuvenation · Hair restoration',c4k:'Practice',c4v:'Amaryllis Polyclinic, Marina Village',c5k:'Languages',c5v:'English & Arabic',consEyebrow:'The consultation',consH2:'It starts with <em>a conversation.</em>',consLede:'No treatment is booked blind.',s1h:'Book on WhatsApp',s1p:'Message Dr. Renata\'s team and choose a time that suits you.',s2h:'Meet & assess',s2p:'Dr. Renata examines your skin, listens, and agrees a bespoke plan with you.',s3h:'Treatment & follow-up',s3p:'Treatment at the clinic, with follow-up care after.',pracEyebrow:'The practice',pracH2:'Amaryllis Polyclinic, <em>Marina Village</em>',pr1k:'Address',pr1v:'Villa A05, Marina Village, Abu Dhabi',pr2k:'Phone',pr3k:'WhatsApp',pr4k:'Instagram',finEyebrow:'Book a consultation',finH2:'Begin with <em>a conversation.</em>',finP:'Send a WhatsApp message — Dr. Renata\'s team replies in English or Arabic.',callBtn:'Call 056 640 1128',footLine:'Dermatologist & Aesthetic Specialist · Amaryllis Polyclinic, Abu Dhabi',disc:'Demo website concept prepared by Safwan Digital. Not an official website.',sbEnds:'Preview ends 3 Dec',sbEnded:'Preview ended'},
+ar:{bar:'معاينة خاصة مُعدّة لـ<b>الدكتورة ريناتا كوستا</b> · صالحة حتى 3 ديسمبر 2026',wmSub:'أخصائية الجلدية',navPhil:'فلسفتها',navTreat:'العلاجات',navAbout:'عن الدكتورة',navPractice:'العيادة',heroEyebrow:'أخصائية جلدية وتجميل · أبوظبي',heroH1:'أفضل بوتوكس هو الذي <em>لا يلاحظه أحد.</em>',heroSub:'<b>الدكتورة ريناتا كوستا</b> — أخصائية جلدية برازيلية معتمدة بخبرة تتجاوز 23 عاماً، الآن في عيادة أماريليس، قرية المارينا. عناية تجميلية مصممة خصيصاً وبأمان أولاً، بالإنجليزية والعربية.',bookWa:'احجز عبر واتساب',exploreBtn:'شاهد العلاجات',chip:'<b>91 ألف متابع</b><span>على إنستغرام · @drrenatacostaabudhabi</span>',silTag:'الدكتورة ريناتا كوستا',philEyebrow:'فلسفتها',q1:'"كل وجه <em>قصة مختلفة.</em>"',q1n:'لا باقات جاهزة. تُبنى خطتك حول بنية وجهك وبشرتك وأهدافك — <b>نتائج مصممة خصيصاً، وبأمان أولاً.</b>',q2:'"لا أقول نعم <em>لكل</em> من يجلس على كرسيّ."',q2n:'إذا لم يكن العلاج مناسباً لك، ستخبرك الدكتورة ريناتا — وستشرح ما هو المناسب. <b>النصيحة الصادقة تأتي قبل أي حجز.</b>',treatEyebrow:'العلاجات',treatH2:'<em>العلاجات</em>',gHint:'مرّر جانباً ←',t1h:'البوتوكس ومضاد التجاعيد',t1p:'تنعيم الخطوط مع الحفاظ على تعابيرك — الجبهة وحول العينين والابتسامة اللثوية والذقن.',t2h:'فيلر الوجه',t2p:'استعادة الامتلاء والتوازن — بما فيه فيلر تحت العين لمظهر طبيعي ومريح.',t3h:'تجديد البشرة والإكسوسومات',t3p:'علاجات تجديدية تدعم الكولاجين وتعيد لبشرتك إشراقها الطبيعي.',t4h:'استعادة الشعر — Gold Hair',t4p:'بروتوكول Gold Hair الخاص بالدكتورة ريناتا، لمعالجة تساقط الشعر من الجذور.',t5h:'علاج التصبغات',t5p:'علاج دقيق ومتدرج للبقع الداكنة والتصبغات التالية للالتهاب — تُجهَّز البشرة أولاً دائماً.',t6h:'تجديد الندبات وملمس البشرة',t6p:'علاجات متقدمة — تشمل الليزر والوخز بالإبر بالترددات الراديوية — للندبات وعدم تجانس الملمس.',ask:'اسأل عبر واتساب',aboutEyebrow:'عن الدكتورة',aboutH2:'خبرة هادئة، <em>وأيدٍ صادقة.</em>',aboutP1:'الدكتورة ريناتا كوستا أخصائية جلدية وتجميل برازيلية معتمدة، بخبرة تتجاوز 23 عاماً. يتركز عملها على الحقن التجميلية وتجديد البشرة واستعادة الشعر — دائماً بشكل شخصي وبأمان أولاً.',c1k:'المؤهل',c1v:'البورد البرازيلي — الأمراض الجلدية',c2k:'الخبرة',c2v:'أكثر من 23 عاماً',c3k:'التخصص',c3v:'الحقن · تجديد البشرة · استعادة الشعر',c4k:'العيادة',c4v:'عيادة أماريليس، قرية المارينا',c5k:'اللغات',c5v:'الإنجليزية والعربية',consEyebrow:'الاستشارة',consH2:'تبدأ <em>بمحادثة.</em>',consLede:'لا يُحجز أي علاج دون تقييم.',s1h:'احجز عبر واتساب',s1p:'راسل فريق الدكتورة ريناتا واختر الوقت المناسب لك.',s2h:'اللقاء والتقييم',s2p:'تفحص الدكتورة ريناتا بشرتك وتستمع، وتتفق معك على خطة مصممة لك.',s3h:'العلاج والمتابعة',s3p:'العلاج في العيادة، مع متابعة ورعاية بعد ذلك.',pracEyebrow:'العيادة',pracH2:'عيادة أماريليس، <em>قرية المارينا</em>',pr1k:'العنوان',pr1v:'فيلا A05، قرية المارينا، أبوظبي',pr2k:'الهاتف',pr3k:'واتساب',pr4k:'إنستغرام',finEyebrow:'احجز استشارة',finH2:'ابدأ <em>بمحادثة.</em>',finP:'أرسل رسالة واتساب — يرد فريق الدكتورة ريناتا بالإنجليزية أو العربية.',callBtn:'اتصل 056 640 1128',footLine:'أخصائية جلدية وتجميل · عيادة أماريليس، أبوظبي',disc:'موقع تجريبي من إعداد صفوان ديجيتال. ليس موقعاً رسمياً.',sbEnds:'تنتهي المعاينة 3 ديسمبر',sbEnded:'انتهت المعاينة'}
+};
+let lang='en';
+function applyLang(l){
+  lang=l; const d=I18N[l];
+  document.documentElement.lang=l; document.documentElement.dir=(l==='ar')?'rtl':'ltr';
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n'); if(d[k]!==undefined) el.innerHTML=d[k];});
+  document.getElementById('langBtn').textContent=(l==='ar')?'EN':'عربي';
+  updateTimer(); setWaLinks();
+}
+function setWaLinks(){
+  const url='https://wa.me/971566401128?text='+encodeURIComponent(WA_MSG[lang]);
+  document.querySelectorAll('a[href^="https://wa.me/971566401128"]').forEach(a=>a.href=url);
+}
+document.getElementById('langBtn').addEventListener('click',()=>applyLang(lang==='en'?'ar':'en'));
+const header=document.getElementById('header');
+addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>10),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+/* sticky-bar timer — fresh 10-day window: 23 Nov 2026 00:00 → 3 Dec 2026 20:00 (Asia/Dubai) */
+const CD_START=Date.UTC(2026,10,22,20,0,0), CD_END=Date.UTC(2026,11,3,6,0,0);
+function updateTimer(){
+  const now=Date.now(), d=I18N[lang];
+  const daysEl=document.getElementById('sbDays'), endsEl=document.getElementById('sbEnds'), fill=document.getElementById('sbFill');
+  if(now>=CD_END){daysEl.textContent=d.sbEnded; endsEl.textContent='Safwan Digital'; fill.style.width='100%'; return;}
+  const days=Math.max(0,Math.ceil((CD_END-now)/864e5));
+  daysEl.textContent = lang==='ar' ? `متبقّي ${days} ${days===1?'يوم':'أيام'}` : `${days} day${days===1?'':'s'} left`;
+  endsEl.textContent=d.sbEnds;
+  const p=Math.min(1,Math.max(0,(now-CD_START)/(CD_END-CD_START)));
+  fill.style.width=((1-p)*100)+'%';
+}
+setInterval(updateTimer,6e4);
+applyLang('en');
+</script>
+</body>
+</html>
