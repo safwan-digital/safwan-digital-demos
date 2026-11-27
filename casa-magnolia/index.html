@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Casa Magnolia — Interior Design Studio, Al Barari, Dubai</title>
+<meta name="description" content="Casa Magnolia is a luxury interior design studio in Al Barari, Dubai — calm, warm homes, bespoke furniture and majlis design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bone:#F5F0E8; --bone2:#EDE4D4; --paper:#FBF8F2;
+  --ink:#33261A; --ink2:#6E5D4B; --clay:#8A6642; --clay2:#A87F52; --line:#DDD0BA;
+  --night:#241B12;
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,sans-serif; --ar:'IBM Plex Sans Arabic',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bone);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:70px}
+html[lang="ar"] body{font-family:var(--ar)}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3,html[lang="ar"] .quote-line{font-family:var(--ar);letter-spacing:0}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,100% - 48px);margin-inline:auto}
+section{padding:110px 0;scroll-margin-top:110px}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--clay)}
+html[lang="ar"] .eyebrow{letter-spacing:0}
+h1,h2{font-family:var(--serif);font-weight:400;line-height:1.06}
+h2{font-size:clamp(2.05rem,4.4vw,3.3rem);margin:18px 0 16px}
+h2 em,h1 em{font-style:italic;color:var(--clay)}
+.lede{color:var(--ink2);font-size:1.07rem;max-width:56ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 32px;border-radius:999px;font-weight:600;font-size:.98rem;min-height:54px;transition:transform .25s,box-shadow .25s;border:1px solid transparent;cursor:pointer}
+.btn-clay{background:linear-gradient(135deg,var(--clay2),var(--clay));color:#FBF6EC;box-shadow:0 16px 32px -14px rgba(138,102,66,.6)}
+.btn-clay:hover{transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line);background:rgba(251,248,242,.7);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--clay2)}
+/* preview bar */
+.pbar{position:fixed;inset-inline:0;top:0;z-index:130;background:var(--night);color:#EFE6D2;font-size:.79rem;text-align:center;padding:9px 44px}
+.pbar b{color:var(--clay2)}
+/* header */
+header{position:fixed;inset-inline:0;top:35px;z-index:120;transition:background .3s,box-shadow .3s}
+header.scrolled{background:rgba(245,240,232,.95);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+.wordmark{font-family:var(--serif);font-size:1.32rem;font-weight:600;line-height:1.05;color:var(--ink)}
+.wordmark span{display:block;font-family:var(--sans);font-size:.57rem;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--clay)}
+html[lang="ar"] .wordmark span{letter-spacing:0;font-family:var(--ar)}
+nav.main{display:flex;gap:32px;font-size:.92rem;font-weight:500}
+nav.main a{color:var(--ink2)}
+nav.main a:hover{color:var(--clay)}
+.lang-btn{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:10px 16px;font-weight:600;font-size:.85rem;cursor:pointer;min-height:44px}
+/* HERO */
+.hero{padding:168px 0 96px;position:relative;overflow:hidden;background:radial-gradient(900px 520px at 85% 8%,rgba(168,127,82,.14),transparent 60%),var(--bone)}
+.hero .cols{display:grid;grid-template-columns:1.02fr .98fr;gap:60px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,5.6vw,4.4rem);font-weight:300;margin:24px 0 22px}
+.hero h1 em{font-weight:400}
+.hero .sub{color:var(--ink2);font-size:1.1rem;max-width:50ch}
+.hero .sub b{color:var(--ink)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.hero-meta{margin-top:26px;font-size:.9rem;color:var(--ink2)}
+.hero-meta b{color:var(--clay)}
+.hero-photo{position:relative}
+.hero-photo .arch{border-radius:999px 999px 22px 22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 40px 70px -34px rgba(51,38,26,.4)}
+.hero-photo .arch img{width:100%;height:560px;object-fit:cover}
+.hero-photo .note{position:absolute;bottom:18px;inset-inline-start:-14px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 18px;font-size:.85rem;box-shadow:0 18px 34px -18px rgba(51,38,26,.35);max-width:230px}
+.hero-photo .note b{display:block;font-family:var(--serif);font-size:1rem;font-weight:500}
+/* WORK rail */
+.work{background:var(--paper);border-block:1px solid var(--line);padding-bottom:92px}
+.w-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.w-hint{font-size:.85rem;color:var(--ink2)}
+.rail{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:42px 4px 18px;scrollbar-width:thin;scrollbar-color:var(--clay) var(--bone2)}
+.rail::-webkit-scrollbar{height:6px}
+.rail::-webkit-scrollbar-thumb{background:var(--clay);border-radius:99px}
+.p-card{scroll-snap-align:start;flex:0 0 min(400px,84vw)}
+.p-card .ph{border-radius:999px 999px 18px 18px;overflow:hidden;border:1px solid var(--line);height:430px}
+.p-card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.p-card:hover .ph img{transform:scale(1.05)}
+.p-card .tx{padding:20px 6px 0}
+.p-card .tag{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--clay)}
+html[lang="ar"] .p-card .tag{letter-spacing:0}
+.p-card h3{font-family:var(--serif);font-size:1.5rem;font-weight:500;margin:6px 0 4px}
+html[lang="ar"] .p-card h3{font-family:var(--ar)}
+.p-card p{color:var(--ink2);font-size:.95rem;max-width:36ch}
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 64px;margin-top:26px}
+.svc{display:flex;gap:22px;padding:30px 0;border-bottom:1px solid var(--line)}
+.svc:first-child{border-top:1px solid var(--line)}
+.svc:nth-child(2){border-top:1px solid var(--line)}
+.svc .ic{flex-shrink:0;width:52px;height:52px;border-radius:50%;border:1px solid var(--clay2);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;color:var(--clay);font-size:1.1rem}
+.svc h3{font-family:var(--serif);font-size:1.35rem;font-weight:500;margin-bottom:5px}
+html[lang="ar"] .svc h3{font-family:var(--ar)}
+.svc p{color:var(--ink2);font-size:.96rem}
+/* PROCESS */
+.process{background:var(--night);color:#F1E9D8}
+.process h2{color:#FBF6EC}
+.process .lede{color:#CDBFA4}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:34px;margin-top:54px}
+.step{border-top:1px solid rgba(168,127,82,.55);padding-top:22px}
+.step .num{font-family:var(--serif);font-style:italic;font-size:1.6rem;color:var(--clay2)}
+.step h3{font-size:1.04rem;margin:8px 0 6px;color:#FBF6EC}
+.step p{color:#CDBFA4;font-size:.93rem}
+/* ABOUT */
+.about .cols{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.sil-wrap{display:flex;justify-content:center;position:relative}
+.sil-wrap .halo{position:absolute;width:74%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(168,127,82,.28),transparent 65%);top:0}
+.sil-wrap .arch{position:relative;width:min(360px,84%);border-radius:999px 999px 22px 22px;border:1px solid var(--clay2);background:linear-gradient(180deg,#EFE7D6,#E7DCC6);padding:36px 30px 0;overflow:hidden}
+.sil-wrap svg{width:100%;height:auto;display:block}
+.sil-wrap .tag{position:absolute;bottom:16px;inset-inline:0;text-align:center;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay)}
+html[lang="ar"] .sil-wrap .tag{letter-spacing:0}
+.quote-line{font-family:var(--serif);font-weight:300;font-style:italic;font-size:clamp(1.4rem,2.6vw,1.9rem);line-height:1.3;margin:26px 0;color:var(--ink)}
+.quote-line em{color:var(--clay)}
+.cred{margin-top:8px;border-top:1px solid var(--line)}
+.cred .row{display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-bottom:1px solid var(--line);font-size:.96rem}
+.cred .k{color:var(--ink2)}
+.cred .v{font-weight:600;text-align:end}
+/* CONTACT */
+.contact{background:var(--paper);border-block:1px solid var(--line)}
+.contact .cols{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.c-row{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);font-size:.98rem}
+.c-row .k{color:var(--ink2)}
+.c-row .v{font-weight:600;text-align:end}
+.c-row a:hover{color:var(--clay)}
+.map-frame{border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:330px}
+.map-frame iframe{width:100%;height:100%;min-height:330px;border:0}
+/* FINAL */
+.final{text-align:center;background:radial-gradient(760px 400px at 50% 0,rgba(168,127,82,.16),transparent 65%),var(--bone2)}
+.final h2{max-width:24ch;margin-inline:auto}
+.final .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+/* FOOTER */
+footer{background:#1B130B;color:#B7A888;padding:54px 0 110px;font-size:.92rem}
+.foot-in{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}
+footer .wordmark{color:#FBF6EC}
+footer .wordmark span{color:var(--clay2)}
+footer a:hover{color:var(--clay2)}
+.disc{margin-top:30px;padding-top:18px;border-top:1px solid rgba(241,233,216,.14);font-size:.8rem;color:#877A5F}
+/* STICKY BAR */
+.stickybar{position:fixed;inset-inline:0;bottom:0;z-index:125;background:rgba(36,27,18,.94);backdrop-filter:blur(16px);border-top:1px solid rgba(168,127,82,.5);color:#F1E9D8}
+.stickybar .in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0;position:relative}
+.sb-timer{font-size:.9rem;display:flex;align-items:center;gap:12px;min-width:0}
+.sb-timer .days{font-weight:700;color:#FBF6EC;white-space:nowrap}
+.sb-timer .ends{color:#B7A888;font-size:.8rem;white-space:nowrap}
+.sb-fill{position:absolute;top:-1px;inset-inline-start:0;height:2px;background:linear-gradient(90deg,var(--clay2),var(--clay));width:100%}
+.sb-book{padding:12px 26px;min-height:48px;font-size:.94rem;flex-shrink:0}
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+/* responsive */
+@media (max-width:1020px){
+  .hero .cols{grid-template-columns:1fr;gap:44px}
+  .hero{padding-top:142px}
+  .hero-photo .arch img{height:440px}
+  .hero-photo .note{inset-inline-start:10px}
+  .about .cols,.contact .cols{grid-template-columns:1fr;gap:40px}
+  .svc-grid{grid-template-columns:1fr}
+  .svc:nth-child(2){border-top:0}
+  .steps{grid-template-columns:1fr 1fr;gap:28px}
+}
+@media (max-width:900px){nav.main{display:none}}
+@media (max-width:640px){
+  section{padding:76px 0}
+  .wrap{width:calc(100% - 36px)}
+  .pbar{font-size:.72rem;padding:8px 12px}
+  header{top:32px}
+  .hero{padding-top:122px}
+  .hero h1{font-size:2.35rem}
+  .hero-photo .arch img{height:340px}
+  .p-card .ph{height:360px}
+  .steps{grid-template-columns:1fr}
+  .sb-timer .ends{display:none}
+  .sb-book{padding:11px 20px}
+  footer{padding-bottom:120px}
+}
+@media (max-width:760px) and (max-height:700px){
+  .hero{padding-top:106px;padding-bottom:64px}
+  .hero h1{font-size:2rem;margin:16px 0 14px}
+  .hero .sub{font-size:.98rem}
+  .hero-ctas{margin-top:22px}
+  .hero-meta{margin-top:16px}
+  .hero-photo .arch img{height:230px}
+  .hero-photo .note{display:none}
+}
+</style>
+</head>
+<body id="top">
+
+<div class="pbar" data-i18n="bar">Private preview prepared for <b>Casa Magnolia</b> · Valid until 7 Dec 2026</div>
+
+<header id="header">
+  <div class="wrap head-in">
+    <a class="wordmark" href="#top">Casa Magnolia<span data-i18n="wmSub">Interior Design · Dubai</span></a>
+    <nav class="main">
+      <a href="#work" data-i18n="navWork">Work</a>
+      <a href="#services" data-i18n="navSvc">Services</a>
+      <a href="#process" data-i18n="navProc">Process</a>
+      <a href="#studio" data-i18n="navStudio">Studio</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <button class="lang-btn" id="langBtn" type="button" aria-label="Switch language">عربي</button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap cols">
+    <div>
+      <p class="eyebrow" data-i18n="heroEyebrow">Interior Design Studio · Al Barari, Dubai</p>
+      <h1 data-i18n="heroH1">Calm, warm homes, designed around <em>how you live.</em></h1>
+      <p class="sub" data-i18n="heroSub"><b>Casa Magnolia</b> designs full homes in Dubai — soft earthy colours, curved furniture made to order, and rooms that feel quiet the moment you walk in.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-clay" href="https://wa.me/971542962272" target="_blank" rel="noopener" data-i18n="bookWa">Start on WhatsApp</a>
+        <a class="btn btn-ghost" href="#work" data-i18n="seeWork">See the work</a>
+      </div>
+      <p class="hero-meta" data-i18n="heroMeta"><b>Al Barari, Dubai</b> · Full villas, majlis rooms & bespoke furniture</p>
+    </div>
+    <div class="hero-photo">
+      <div class="arch"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop" alt="Warm minimalist living room with curved furniture" fetchpriority="high"></div>
+      <div class="note"><b data-i18n="noteT">Designed & built by the studio</b><span data-i18n="noteP">From first sketch to the last cushion.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTED WORK -->
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="w-head">
+      <div>
+        <p class="eyebrow" data-i18n="workEyebrow">Selected work</p>
+        <h2 data-i18n="workH2">Rooms with <em>a quiet soul</em></h2>
+      </div>
+      <p class="w-hint" data-i18n="wHint">Scroll sideways →</p>
+    </div>
+    <div class="rail">
+      <article class="p-card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop" alt="Curved majlis seating in warm tones" loading="lazy"></div><div class="tx"><span class="tag" data-i18n="p1t">Majlis</span><h3 data-i18n="p1h">The Curved Majlis</h3><p data-i18n="p1p">A sweeping curved sofa in cream bouclé, low stone tables and soft light — a majlis made for long evenings with family.</p></div></article>
+      <article class="p-card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1200&auto=format&fit=crop" alt="Living room with dark stone and bouclé chairs" loading="lazy"></div><div class="tx"><span class="tag" data-i18n="p2t">Living room</span><h3 data-i18n="p2h">Stone & Bouclé Living</h3><p data-i18n="p2p">Dark stone, warm wood and cloud-soft seating. Nothing shouts — everything sits in balance.</p></div></article>
+      <article class="p-card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1200&auto=format&fit=crop" alt="Earth-tone master bedroom" loading="lazy"></div><div class="tx"><span class="tag" data-i18n="p3t">Master suite</span><h3 data-i18n="p3h">Earth-Tone Master Suite</h3><p data-i18n="p3p">Layers of sand, clay and linen. A bedroom that slows you down the moment the door closes.</p></div></article>
+      <article class="p-card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=1200&auto=format&fit=crop" alt="Warm family living space" loading="lazy"></div><div class="tx"><span class="tag" data-i18n="p4t">Family villa</span><h3 data-i18n="p4h">The Family Villa, Al Barari</h3><p data-i18n="p4p">A full villa in soft neutrals — open living spaces that stay calm even when the house is full.</p></div></article>
+      <article class="p-card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1200&auto=format&fit=crop" alt="Dining room with bespoke furniture" loading="lazy"></div><div class="tx"><span class="tag" data-i18n="p5t">Dining</span><h3 data-i18n="p5h">Bespoke Dining Room</h3><p data-i18n="p5p">A table made to measure for the room, chairs upholstered by hand, and light that flatters every dinner.</p></div></article>
+      <article class="p-card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1200&auto=format&fit=crop" alt="Bright calm apartment interior" loading="lazy"></div><div class="tx"><span class="tag" data-i18n="p6t">Apartment</span><h3 data-i18n="p6h">Soft Light Apartment</h3><p data-i18n="p6p">Small rooms, same philosophy — pale wood, rounded edges and storage hidden in plain sight.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="svcEyebrow">What we do</p>
+    <h2 data-i18n="svcH2">Everything under <em>one roof</em></h2>
+    <p class="lede" data-i18n="svcLede">One studio designs, builds and styles your home — so nothing is lost between drawings and the finished room.</p>
+    <div class="svc-grid">
+      <div class="svc reveal"><div class="ic">a.</div><div><h3 data-i18n="s1h">Full villa interiors</h3><p data-i18n="s1p">Complete design for whole homes — layout, materials, lighting and colour, planned room by room.</p></div></div>
+      <div class="svc reveal"><div class="ic">b.</div><div><h3 data-i18n="s2h">Bespoke furniture</h3><p data-i18n="s2p">Sofas, tables and joinery made to order for your rooms — curved forms and natural fabrics are our signature.</p></div></div>
+      <div class="svc reveal"><div class="ic">c.</div><div><h3 data-i18n="s3h">Majlis design</h3><p data-i18n="s3p">Majlis rooms that honour tradition and feel modern — generous seating, warm light, quiet detail.</p></div></div>
+      <div class="svc reveal"><div class="ic">d.</div><div><h3 data-i18n="s4h">Turnkey styling</h3><p data-i18n="s4p">The final layer — art, objects, textiles and plants, placed by the studio so you walk into a finished home.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="procEyebrow">How it works</p>
+    <h2 data-i18n="procH2">Four steps, <em>no surprises</em></h2>
+    <p class="lede" data-i18n="procLede">You always know what happens next, and what it will look like when it's done.</p>
+    <div class="steps">
+      <div class="step reveal"><div class="num">01</div><h3 data-i18n="st1h">Listen & visit</h3><p data-i18n="st1p">We visit your home, listen to how you live, and measure every room.</p></div>
+      <div class="step reveal"><div class="num">02</div><h3 data-i18n="st2h">Design concept</h3><p data-i18n="st2p">You see the full design — colours, materials and furniture — before any work begins.</p></div>
+      <div class="step reveal"><div class="num">03</div><h3 data-i18n="st3h">Craft & fit-out</h3><p data-i18n="st3p">Our team builds and installs, and your bespoke furniture is made to order.</p></div>
+      <div class="step reveal"><div class="num">04</div><h3 data-i18n="st4h">Styling & handover</h3><p data-i18n="st4p">We style every room down to the last object, then hand you the keys.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / STUDIO -->
+<section class="about" id="studio">
+  <div class="wrap cols">
+    <div class="sil-wrap" aria-hidden="true">
+      <div class="halo"></div>
+      <div class="arch">
+        <svg viewBox="0 0 300 360" role="img" aria-label="Studio portrait silhouette">
+          <defs>
+            <linearGradient id="sil" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#2A1E12"/>
+              <stop offset="1" stop-color="#120C06"/>
+            </linearGradient>
+          </defs>
+          <circle cx="150" cy="32" r="16" fill="url(#sil)"/>
+          <path fill="url(#sil)" stroke="rgba(168,127,82,.55)" stroke-width="1.4" d="M150 40c26 0 43 20 43 46 0 16-6 29-15 37 4 3 10 6 17 8 33 8 50 29 58 60 6 24 9 54 10 95l1 74H36l1-74c1-41 4-71 10-95 8-31 25-52 58-60 7-2 13-5 17-8-9-8-15-21-15-37 0-26 17-46 43-46z"/>
+          <path d="M126 140l24 40 24-40 13 4-37 60-37-60z" fill="#F5F0E8" opacity=".9"/>
+          <path d="M118 176c0 32 14 50 32 50s32-18 32-50" fill="none" stroke="#A87F52" stroke-width="3.2" stroke-linecap="round"/>
+          <circle cx="118" cy="170" r="5" fill="#A87F52"/>
+          <circle cx="182" cy="170" r="5" fill="#A87F52"/>
+        </svg>
+        <div class="tag" data-i18n="silTag">The Studio</div>
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="abEyebrow">The studio</p>
+      <h2 data-i18n="abH2">Designed slowly, <em>built to last</em></h2>
+      <p class="quote-line" data-i18n="abQuote">“A home should feel calm before it looks impressive.”</p>
+      <p class="lede" data-i18n="abP">Casa Magnolia is an interior design studio based in Al Barari, Dubai. We work in a warm, minimal style — earthy colours, natural stone, curved furniture and soft fabrics — and we design, build and style every project ourselves, from the first visit to the final handover.</p>
+      <div class="cred">
+        <div class="row"><span class="k" data-i18n="cr1k">Based in</span><span class="v" data-i18n="cr1v">Al Barari, Dubai</span></div>
+        <div class="row"><span class="k" data-i18n="cr2k">Style</span><span class="v" data-i18n="cr2v">Warm minimal · Wabi-sabi luxury</span></div>
+        <div class="row"><span class="k" data-i18n="cr3k">Known for</span><span class="v" data-i18n="cr3v">Bespoke furniture & majlis rooms</span></div>
+        <div class="row"><span class="k" data-i18n="cr4k">Projects</span><span class="v" data-i18n="cr4v">Villas & apartments across Dubai</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap cols">
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="ctEyebrow">Contact</p>
+      <h2 data-i18n="ctH2">Talk to <em>the studio</em></h2>
+      <p class="lede" data-i18n="ctP">Send a WhatsApp message with a few photos of your home — we'll reply with honest first thoughts, no pressure.</p>
+      <div style="margin-top:22px">
+        <div class="c-row"><div class="k" data-i18n="ct1k">Studio</div><div class="v" data-i18n="ct1v">Al Barari, Dubai, UAE</div></div>
+        <div class="c-row"><div class="k" data-i18n="ct2k">WhatsApp</div><div class="v"><a href="https://wa.me/971542962272" target="_blank" rel="noopener" dir="ltr">+971 54 296 2272</a></div></div>
+        <div class="c-row"><div class="k" data-i18n="ct3k">Instagram</div><div class="v"><a href="https://www.instagram.com/casamagnoliadubai/" target="_blank" rel="noopener" dir="ltr">@casamagnoliadubai</a></div></div>
+      </div>
+    </div>
+    <div class="map-frame reveal"><iframe title="Map — Al Barari, Dubai" src="https://www.google.com/maps?q=Al+Barari+Dubai&output=embed" loading="lazy"></iframe></div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="finEyebrow">Your home, calmer</p>
+    <h2 data-i18n="finH2">Tell us about <em>your home</em></h2>
+    <p class="lede" style="margin-inline:auto" data-i18n="finP">One message is enough to start. We reply on WhatsApp, in English or Arabic.</p>
+    <div class="ctas">
+      <a class="btn btn-clay" href="https://wa.me/971542962272" target="_blank" rel="noopener" data-i18n="bookWa">Start on WhatsApp</a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/casamagnoliadubai/" target="_blank" rel="noopener" data-i18n="finIg">See Instagram</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-in">
+      <div>
+        <a class="wordmark" href="#top">Casa Magnolia<span data-i18n="wmSub">Interior Design · Dubai</span></a>
+        <p style="margin-top:10px" data-i18n="footLine">Interior design studio · Al Barari, Dubai</p>
+      </div>
+      <div>
+        <p><a href="https://wa.me/971542962272" target="_blank" rel="noopener" dir="ltr">WhatsApp · +971 54 296 2272</a></p>
+        <p style="margin-top:6px"><a href="https://www.instagram.com/casamagnoliadubai/" target="_blank" rel="noopener" dir="ltr">Instagram · @casamagnoliadubai</a></p>
+      </div>
+    </div>
+    <p class="disc" data-i18n="disc">Demo website concept prepared by Safwan Digital. Not an official website.</p>
+  </div>
+</footer>
+
+<!-- STICKY BAR: preview timer + WhatsApp CTA -->
+<div class="stickybar">
+  <div class="wrap in">
+    <span class="sb-fill" id="sbFill"></span>
+    <div class="sb-timer"><span class="days" id="sbDays">10 days left</span><span class="ends" id="sbEnds">Preview ends 7 Dec</span></div>
+    <a class="btn btn-clay sb-book" href="https://wa.me/971542962272" target="_blank" rel="noopener" data-i18n="bookWa">Start on WhatsApp</a>
+  </div>
+</div>
+
+<script>
+const WA_MSG = {en:'Hello Casa Magnolia, I would like to ask about designing my home.', ar:'مرحباً كازا ماغنوليا، أود الاستفسار عن تصميم منزلي.'};
+const I18N = {
+en:{bar:'Private preview prepared for <b>Casa Magnolia</b> · Valid until 7 Dec 2026',wmSub:'Interior Design · Dubai',navWork:'Work',navSvc:'Services',navProc:'Process',navStudio:'Studio',navContact:'Contact',heroEyebrow:'Interior Design Studio · Al Barari, Dubai',heroH1:'Calm, warm homes, designed around <em>how you live.</em>',heroSub:'<b>Casa Magnolia</b> designs full homes in Dubai — soft earthy colours, curved furniture made to order, and rooms that feel quiet the moment you walk in.',bookWa:'Start on WhatsApp',seeWork:'See the work',heroMeta:'<b>Al Barari, Dubai</b> · Full villas, majlis rooms & bespoke furniture',noteT:'Designed & built by the studio',noteP:'From first sketch to the last cushion.',workEyebrow:'Selected work',workH2:'Rooms with <em>a quiet soul</em>',wHint:'Scroll sideways →',p1t:'Majlis',p1h:'The Curved Majlis',p1p:'A sweeping curved sofa in cream bouclé, low stone tables and soft light — a majlis made for long evenings with family.',p2t:'Living room',p2h:'Stone & Bouclé Living',p2p:'Dark stone, warm wood and cloud-soft seating. Nothing shouts — everything sits in balance.',p3t:'Master suite',p3h:'Earth-Tone Master Suite',p3p:'Layers of sand, clay and linen. A bedroom that slows you down the moment the door closes.',p4t:'Family villa',p4h:'The Family Villa, Al Barari',p4p:'A full villa in soft neutrals — open living spaces that stay calm even when the house is full.',p5t:'Dining',p5h:'Bespoke Dining Room',p5p:'A table made to measure for the room, chairs upholstered by hand, and light that flatters every dinner.',p6t:'Apartment',p6h:'Soft Light Apartment',p6p:'Small rooms, same philosophy — pale wood, rounded edges and storage hidden in plain sight.',svcEyebrow:'What we do',svcH2:'Everything under <em>one roof</em>',svcLede:'One studio designs, builds and styles your home — so nothing is lost between drawings and the finished room.',s1h:'Full villa interiors',s1p:'Complete design for whole homes — layout, materials, lighting and colour, planned room by room.',s2h:'Bespoke furniture',s2p:'Sofas, tables and joinery made to order for your rooms — curved forms and natural fabrics are our signature.',s3h:'Majlis design',s3p:'Majlis rooms that honour tradition and feel modern — generous seating, warm light, quiet detail.',s4h:'Turnkey styling',s4p:'The final layer — art, objects, textiles and plants, placed by the studio so you walk into a finished home.',procEyebrow:'How it works',procH2:'Four steps, <em>no surprises</em>',procLede:'You always know what happens next, and what it will look like when it\'s done.',st1h:'Listen & visit',st1p:'We visit your home, listen to how you live, and measure every room.',st2h:'Design concept',st2p:'You see the full design — colours, materials and furniture — before any work begins.',st3h:'Craft & fit-out',st3p:'Our team builds and installs, and your bespoke furniture is made to order.',st4h:'Styling & handover',st4p:'We style every room down to the last object, then hand you the keys.',abEyebrow:'The studio',abH2:'Designed slowly, <em>built to last</em>',abQuote:'“A home should feel calm before it looks impressive.”',abP:'Casa Magnolia is an interior design studio based in Al Barari, Dubai. We work in a warm, minimal style — earthy colours, natural stone, curved furniture and soft fabrics — and we design, build and style every project ourselves, from the first visit to the final handover.',cr1k:'Based in',cr1v:'Al Barari, Dubai',cr2k:'Style',cr2v:'Warm minimal · Wabi-sabi luxury',cr3k:'Known for',cr3v:'Bespoke furniture & majlis rooms',cr4k:'Projects',cr4v:'Villas & apartments across Dubai',silTag:'The Studio',ctEyebrow:'Contact',ctH2:'Talk to <em>the studio</em>',ctP:'Send a WhatsApp message with a few photos of your home — we\'ll reply with honest first thoughts, no pressure.',ct1k:'Studio',ct1v:'Al Barari, Dubai, UAE',ct2k:'WhatsApp',ct3k:'Instagram',finEyebrow:'Your home, calmer',finH2:'Tell us about <em>your home</em>',finP:'One message is enough to start. We reply on WhatsApp, in English or Arabic.',finIg:'See Instagram',footLine:'Interior design studio · Al Barari, Dubai',disc:'Demo website concept prepared by Safwan Digital. Not an official website.',sbEnds:'Preview ends 7 Dec',sbEnded:'Preview ended'},
+ar:{bar:'معاينة خاصة مُعدّة لـ<b>كازا ماغنوليا</b> · صالحة حتى 7 ديسمبر 2026',wmSub:'تصميم داخلي · دبي',navWork:'أعمالنا',navSvc:'خدماتنا',navProc:'خطواتنا',navStudio:'الاستوديو',navContact:'تواصل',heroEyebrow:'استوديو تصميم داخلي · البراري، دبي',heroH1:'منازل هادئة ودافئة، مصممة حول <em>طريقة عيشك.</em>',heroSub:'<b>كازا ماغنوليا</b> تصمم منازل كاملة في دبي — ألوان ترابية ناعمة، أثاث منحني يُصنع حسب الطلب، وغرف تشعرك بالهدوء منذ لحظة دخولك.',bookWa:'ابدأ عبر واتساب',seeWork:'شاهد الأعمال',heroMeta:'<b>البراري، دبي</b> · فلل كاملة وغرف مجالس وأثاث مخصص',noteT:'تصميم وتنفيذ الاستوديو',noteP:'من أول رسمة حتى آخر وسادة.',workEyebrow:'أعمال مختارة',workH2:'غرف <em>بروح هادئة</em>',wHint:'مرّر جانباً ←',p1t:'مجلس',p1h:'المجلس المنحني',p1p:'كنبة منحنية واسعة بقماش بوكليه كريمي، وطاولات حجرية منخفضة وإضاءة ناعمة — مجلس صُمم لأمسيات عائلية طويلة.',p2t:'غرفة معيشة',p2h:'معيشة الحجر والبوكليه',p2p:'حجر داكن وخشب دافئ ومقاعد ناعمة كالسحاب. لا شيء يصرخ — كل شيء في توازن.',p3t:'جناح رئيسي',p3h:'الجناح الرئيسي الترابي',p3p:'طبقات من الرملي والطيني والكتان. غرفة نوم تُبطئ إيقاعك منذ لحظة إغلاق الباب.',p4t:'فيلا عائلية',p4h:'فيلا العائلة، البراري',p4p:'فيلا كاملة بألوان محايدة ناعمة — مساحات معيشة مفتوحة تبقى هادئة حتى عندما يمتلئ المنزل.',p5t:'طعام',p5h:'غرفة طعام مخصصة',p5p:'طاولة صُنعت على مقاس الغرفة، وكراسي منجّدة يدوياً، وإضاءة تُجمل كل عشاء.',p6t:'شقة',p6h:'شقة النور الناعم',p6p:'غرف صغيرة بنفس الفلسفة — خشب فاتح وحواف دائرية وتخزين مخفي عن الأنظار.',svcEyebrow:'ماذا نقدّم',svcH2:'كل شيء <em>تحت سقف واحد</em>',svcLede:'استوديو واحد يصمم منزلك وينفذه ويُنسّقه — فلا يضيع شيء بين الرسومات والغرفة الجاهزة.',s1h:'تصميم فلل كاملة',s1p:'تصميم متكامل لمنازل كاملة — التوزيع والخامات والإضاءة والألوان، غرفة بغرفة.',s2h:'أثاث مخصص',s2p:'كنب وطاولات ونجارة تُصنع حسب الطلب لغرفك — الأشكال المنحنية والأقمشة الطبيعية بصمتنا.',s3h:'تصميم المجالس',s3p:'غرف مجالس تحترم التقاليد وتشعر بالحداثة — مقاعد سخية وإضاءة دافئة وتفاصيل هادئة.',s4h:'تنسيق متكامل',s4p:'الطبقة الأخيرة — الفن والتحف والمنسوجات والنباتات، يضعها الاستوديو لتدخل منزلاً جاهزاً.',procEyebrow:'كيف نعمل',procH2:'أربع خطوات، <em>دون مفاجآت</em>',procLede:'تعرف دائماً ما الخطوة التالية، وكيف سيبدو الناتج عند انتهائه.',st1h:'الاستماع والزيارة',st1p:'نزور منزلك، ونستمع إلى طريقة عيشك، ونقيس كل غرفة.',st2h:'فكرة التصميم',st2p:'ترى التصميم كاملاً — الألوان والخامات والأثاث — قبل بدء أي عمل.',st3h:'الصناعة والتنفيذ',st3p:'فريقنا يبني ويركّب، وأثاثك المخصص يُصنع حسب الطلب.',st4h:'التنسيق والتسليم',st4p:'نُنسّق كل غرفة حتى آخر قطعة، ثم نسلّمك المفاتيح.',abEyebrow:'الاستوديو',abH2:'مصمم على مهل، <em>ومبني ليدوم</em>',abQuote:'"يجب أن يمنحك المنزل الهدوء قبل أن يبهرك شكله."',abP:'كازا ماغنوليا استوديو تصميم داخلي مقره البراري، دبي. نعمل بأسلوب دافئ وبسيط — ألوان ترابية وحجر طبيعي وأثاث منحني وأقمشة ناعمة — ونصمم كل مشروع وننفذه ونُنسّقه بأنفسنا، من الزيارة الأولى حتى التسليم النهائي.',cr1k:'المقر',cr1v:'البراري، دبي',cr2k:'الأسلوب',cr2v:'بساطة دافئة · فخامة وابي سابي',cr3k:'نشتهر بـ',cr3v:'الأثاث المخصص وغرف المجالس',cr4k:'المشاريع',cr4v:'فلل وشقق في أنحاء دبي',silTag:'الاستوديو',ctEyebrow:'تواصل',ctH2:'تحدّث مع <em>الاستوديو</em>',ctP:'أرسل رسالة واتساب مع بعض صور منزلك — وسنرد بانطباعات أولى صادقة، دون أي ضغط.',ct1k:'الاستوديو',ct1v:'البراري، دبي، الإمارات',ct2k:'واتساب',ct3k:'إنستغرام',finEyebrow:'منزلك، أكثر هدوءاً',finH2:'حدّثنا عن <em>منزلك</em>',finP:'رسالة واحدة تكفي للبدء. نرد عبر واتساب، بالإنجليزية أو العربية.',finIg:'شاهد إنستغرام',footLine:'استوديو تصميم داخلي · البراري، دبي',disc:'موقع تجريبي من إعداد صفوان ديجيتال. ليس موقعاً رسمياً.',sbEnds:'تنتهي المعاينة 7 ديسمبر',sbEnded:'انتهت المعاينة'}
+};
+let lang='en';
+function applyLang(l){
+  lang=l; const d=I18N[l];
+  document.documentElement.lang=l; document.documentElement.dir=(l==='ar')?'rtl':'ltr';
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n'); if(d[k]!==undefined) el.innerHTML=d[k];});
+  document.getElementById('langBtn').textContent=(l==='ar')?'EN':'عربي';
+  updateTimer(); setWaLinks();
+}
+function setWaLinks(){
+  const url='https://wa.me/971542962272?text='+encodeURIComponent(WA_MSG[lang]);
+  document.querySelectorAll('a[href^="https://wa.me/971542962272"]').forEach(a=>a.href=url);
+}
+document.getElementById('langBtn').addEventListener('click',()=>applyLang(lang==='en'?'ar':'en'));
+const header=document.getElementById('header');
+addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>10),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+/* sticky-bar timer — 10-day window: 27 Nov 2026 00:00 → 7 Dec 2026 10:00 (Asia/Dubai) */
+const CD_START=Date.UTC(2026,10,26,20,0,0), CD_END=Date.UTC(2026,11,7,6,0,0);
+function updateTimer(){
+  const now=Date.now(), d=I18N[lang];
+  const daysEl=document.getElementById('sbDays'), endsEl=document.getElementById('sbEnds'), fill=document.getElementById('sbFill');
+  if(now>=CD_END){daysEl.textContent=d.sbEnded; endsEl.textContent='Safwan Digital'; fill.style.width='100%'; return;}
+  const days=Math.max(0,Math.ceil((CD_END-now)/864e5));
+  daysEl.textContent = lang==='ar' ? `متبقّي ${days} أيام · تنتهي المعاينة 7 ديسمبر` : `${days} days left · Preview ends 7 Dec`;
+  endsEl.textContent='';
+  const p=Math.min(1,Math.max(0,(now-CD_START)/(CD_END-CD_START)));
+  fill.style.width=((1-p)*100)+'%';
+}
+setInterval(updateTimer,6e4);
+applyLang('en');
+</script>
+</body>
+</html>
