@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>K'ROWE — Kristina Rowe · Colour-First Interior Design, Abu Dhabi & Dubai</title>
+<meta name="description" content="K'ROWE by Kristina Rowe — colour-first interior design in Abu Dhabi and Dubai. Full-home design, colour consultation, art curation and styling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --aub:#2A1230; --aub2:#3B1A42; --plum:#4A2358;
+  --cream:#F7F0E1; --cream2:#EFE3CC; --paper:#FBF7EC;
+  --must:#E3A81C; --must2:#F2BC3C; --cela:#A8BFA5; --brass:#B08D4F;
+  --ink:#221527; --ink2:#5E5468;
+  --disp:'Space Grotesk',sans-serif; --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,sans-serif; --ar:'IBM Plex Sans Arabic',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:66px}
+html[lang="ar"] body{font-family:var(--ar)}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,100% - 48px);margin-inline:auto}
+section{padding:110px 0;scroll-margin-top:96px}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase}
+html[lang="ar"] .eyebrow{letter-spacing:0}
+h1,h2{font-family:var(--disp);font-weight:700;line-height:.98;letter-spacing:-.01em;text-transform:uppercase}
+html[lang="ar"] h1,html[lang="ar"] h2{font-family:var(--ar);letter-spacing:0}
+h2{font-size:clamp(2.3rem,5.4vw,4.2rem)}
+.serif-i{font-family:var(--serif);font-style:italic;font-weight:500;text-transform:none;letter-spacing:0}
+html[lang="ar"] .serif-i{font-family:var(--ar);font-style:normal}
+.lede{font-size:1.08rem;max-width:56ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 32px;border-radius:999px;font-weight:600;font-size:.98rem;min-height:54px;border:2px solid transparent;cursor:pointer;transition:transform .25s,background .25s,color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-must{background:var(--must);color:#2A1230}
+.btn-must:hover{background:var(--must2)}
+.btn-ghost{border-color:currentColor;background:transparent}
+/* preview bar */
+.pbar{position:fixed;inset-inline:0;top:0;z-index:130;background:#160A1B;color:#EFE3CC;font-size:.79rem;text-align:center;padding:9px 44px}
+.pbar b{color:var(--must2)}
+/* header */
+header{position:fixed;inset-inline:0;top:35px;z-index:120;transition:background .3s,box-shadow .3s}
+header.scrolled{background:rgba(247,240,225,.95);backdrop-filter:blur(14px);box-shadow:0 2px 0 var(--aub)}
+header.scrolled .wordmark,header.scrolled nav.main a{color:var(--aub)}
+header.scrolled .lang-btn{border-color:var(--aub);color:var(--aub)}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 0}
+.wordmark{font-family:var(--disp);font-weight:700;font-size:1.55rem;letter-spacing:.04em;color:var(--cream);line-height:1;transition:color .3s}
+.wordmark span{color:var(--must)}
+.wordmark small{display:block;font-family:var(--sans);font-size:.56rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--must2);margin-top:3px}
+html[lang="ar"] .wordmark small{letter-spacing:0;font-family:var(--ar)}
+nav.main{display:flex;gap:30px;font-size:.92rem;font-weight:600}
+nav.main a{color:rgba(247,240,225,.88)}
+nav.main a:hover{color:var(--must2)}
+.lang-btn{border:2px solid rgba(247,240,225,.5);background:transparent;color:var(--cream);border-radius:999px;padding:9px 17px;font-weight:700;font-size:.85rem;cursor:pointer;min-height:44px;transition:all .3s}
+/* HERO — aubergine block */
+.hero{background:var(--aub);color:var(--cream);padding:158px 0 84px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset-inline-end:-140px;top:-140px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(227,168,28,.28),transparent 65%)}
+.hero .eyebrow{color:var(--must2)}
+.hero h1{font-size:clamp(3.4rem,11vw,8.6rem);margin:20px 0 6px;color:var(--cream)}
+.hero h1 .k{color:var(--must)}
+.hero .promise{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.5rem,3.4vw,2.5rem);color:var(--cream);line-height:1.2;max-width:22ch}
+html[lang="ar"] .hero .promise{font-family:var(--ar);font-style:normal}
+.hero .sub{color:#D9CCE4;max-width:52ch;margin-top:20px;font-size:1.05rem}
+.hero .sub b{color:var(--cream)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px;position:relative;z-index:2}
+.btn-cream{background:var(--cream);color:var(--aub)}
+.btn-cream:hover{background:#fff}
+.hero .btn-ghost{color:var(--cream)}
+.hero-strip{display:flex;gap:0;margin-top:56px;border-top:1px solid rgba(247,240,225,.22);flex-wrap:wrap;position:relative;z-index:2}
+.hero-strip div{padding:18px 28px 4px 0;margin-inline-end:28px}
+.hero-strip .n{font-family:var(--disp);font-weight:700;font-size:1.5rem;color:var(--must2)}
+.hero-strip .t{font-size:.82rem;color:#CBBBD8;text-transform:uppercase;letter-spacing:.14em}
+html[lang="ar"] .hero-strip .t{letter-spacing:0}
+/* colour band */
+.band{display:grid;grid-template-columns:repeat(4,1fr);height:16px}
+.band i:nth-child(1){background:var(--aub)}
+.band i:nth-child(2){background:var(--must)}
+.band i:nth-child(3){background:var(--cela)}
+.band i:nth-child(4){background:var(--brass)}
+/* WORK — cream, asymmetric */
+.work{background:var(--cream)}
+.work .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:52px}
+.work .eyebrow{color:var(--plum)}
+.work h2{color:var(--aub)}
+.work .lede{color:var(--ink2)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}
+.proj{border-radius:20px;overflow:hidden;position:relative;background:var(--aub2);color:var(--cream);min-height:340px;display:flex;align-items:flex-end}
+.proj img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92;transition:transform .7s}
+.proj:hover img{transform:scale(1.05)}
+.proj .tx{position:relative;padding:26px;width:100%;background:linear-gradient(transparent,rgba(22,10,27,.88) 55%)}
+.proj .tag{display:inline-block;background:var(--must);color:#2A1230;font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:5px 12px;border-radius:99px;margin-bottom:10px}
+html[lang="ar"] .proj .tag{letter-spacing:0}
+.proj h3{font-family:var(--disp);font-size:1.5rem;font-weight:700;line-height:1.1;text-transform:uppercase}
+html[lang="ar"] .proj h3{font-family:var(--ar)}
+.proj p{color:#E4D8EE;font-size:.93rem;margin-top:6px;max-width:44ch}
+.p1{grid-column:1/8;min-height:460px}
+.p2{grid-column:8/13;min-height:460px}
+.p3{grid-column:1/6}
+.p4{grid-column:6/13}
+/* SERVICES — mustard block */
+.services{background:var(--must);color:#2A1230}
+.services .eyebrow{color:var(--aub)}
+.services h2{color:var(--aub)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:54px}
+.svc{background:var(--paper);border-radius:20px;padding:34px 30px;border:2px solid var(--aub)}
+.svc .num{font-family:var(--disp);font-weight:700;font-size:2.6rem;color:var(--plum);line-height:1}
+.svc h3{font-family:var(--disp);font-size:1.3rem;font-weight:700;text-transform:uppercase;margin:16px 0 10px;color:var(--aub)}
+html[lang="ar"] .svc h3{font-family:var(--ar)}
+.svc p{color:var(--ink2);font-size:.97rem}
+/* PROCESS — aubergine */
+.process{background:var(--aub);color:var(--cream)}
+.process .eyebrow{color:var(--must2)}
+.process h2{color:var(--cream)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:56px}
+.step{border-top:3px solid var(--must);padding-top:22px}
+.step .num{font-family:var(--disp);font-weight:700;font-size:3rem;color:transparent;-webkit-text-stroke:1.5px var(--must2);line-height:1}
+.step h3{font-size:1.08rem;font-weight:700;margin:14px 0 8px;color:var(--cream)}
+.step p{color:#CBBBD8;font-size:.94rem}
+/* ABOUT — cream, silhouette */
+.about{background:var(--cream)}
+.about .cols{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.about .eyebrow{color:var(--plum)}
+.about h2{color:var(--aub);font-size:clamp(2.1rem,4.6vw,3.4rem)}
+.about .lede{color:var(--ink2);margin-top:18px}
+.about .lede b{color:var(--ink)}
+.silhouette{position:relative;display:flex;justify-content:center}
+.silhouette .halo{position:absolute;width:80%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(227,168,28,.35),transparent 65%);top:0}
+.silhouette .arch{position:relative;width:min(360px,84%);border-radius:200px 200px 22px 22px;border:2px solid var(--aub);background:linear-gradient(180deg,#EFE3CC,#E7D9BC);padding:30px 26px 0;overflow:hidden}
+.silhouette svg{width:100%;height:auto;display:block}
+.silhouette .tag{position:absolute;bottom:14px;inset-inline:0;text-align:center;font-size:.7rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--aub)}
+html[lang="ar"] .silhouette .tag{letter-spacing:0}
+.facts{margin-top:30px;border-top:2px solid var(--aub)}
+.facts .row{display:flex;justify-content:space-between;gap:18px;padding:13px 0;border-bottom:1px solid #DCD0B8;font-size:.96rem}
+.facts .k{color:var(--ink2)}
+.facts .v{font-weight:700;text-align:end;color:var(--aub)}
+/* CONTACT / FINAL — plum block */
+.final{background:var(--plum);color:var(--cream);text-align:center}
+.final .eyebrow{color:var(--must2)}
+.final h2{color:var(--cream);max-width:20ch;margin:18px auto 16px}
+.final .lede{color:#E4D8EE;margin-inline:auto}
+.final .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.final .btn-ghost{color:var(--cream)}
+.where{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:44px}
+.where span{border:1.5px solid rgba(247,240,225,.45);border-radius:999px;padding:9px 22px;font-weight:600;font-size:.92rem}
+/* footer */
+footer{background:#160A1B;color:#B9A8C4;padding:52px 0 104px;font-size:.92rem}
+.foot-in{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}
+footer .wordmark{color:var(--cream)}
+footer a:hover{color:var(--must2)}
+.disc{margin-top:28px;padding-top:18px;border-top:1px solid rgba(247,240,225,.14);font-size:.8rem;color:#7E6E8C}
+/* sticky bar */
+.stickybar{position:fixed;inset-inline:0;bottom:0;z-index:125;background:rgba(22,10,27,.94);backdrop-filter:blur(16px);border-top:2px solid var(--must);color:var(--cream)}
+.stickybar .in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0;position:relative}
+.sb-timer{font-size:.92rem;font-weight:600;display:flex;align-items:center;gap:12px;min-width:0;white-space:nowrap}
+.sb-timer .ends{color:#B9A8C4;font-size:.8rem;font-weight:500}
+.sb-fill{position:absolute;top:-2px;inset-inline-start:0;height:2px;background:var(--cream);width:100%}
+.sb-book{padding:12px 26px;min-height:48px;font-size:.94rem;flex-shrink:0}
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+/* responsive */
+@media (max-width:1020px){
+  .svc-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .about .cols{grid-template-columns:1fr;gap:44px}
+  .p1,.p2,.p3,.p4{grid-column:1/13;min-height:340px}
+}
+@media (max-width:900px){nav.main{display:none}}
+@media (max-width:640px){
+  section{padding:74px 0}
+  .wrap{width:calc(100% - 36px)}
+  .pbar{font-size:.72rem;padding:8px 12px}
+  header{top:32px}
+  .hero{padding:126px 0 64px}
+  .hero h1{font-size:3.3rem}
+  .steps{grid-template-columns:1fr}
+  .sb-timer .ends{display:none}
+  .sb-book{padding:11px 18px}
+  footer{padding-bottom:118px}
+}
+@media (max-width:760px) and (max-height:700px){
+  .hero{padding-top:106px}
+  .hero h1{font-size:2.7rem;margin-top:14px}
+  .hero .promise{font-size:1.3rem}
+  .hero .sub{font-size:.95rem;margin-top:14px}
+  .hero-ctas{margin-top:22px}
+  .hero-strip{margin-top:30px}
+  .hero-strip div{padding-top:12px}
+}
+</style>
+</head>
+<body id="top">
+
+<div class="pbar" data-i18n="bar">Private preview prepared for <b>K'ROWE — Kristina Rowe</b> · Valid until 7 Dec 2026</div>
+
+<header id="header">
+  <div class="wrap head-in">
+    <a class="wordmark" href="#top">K<span>'</span>ROWE<small data-i18n="wmSub">Kristina Rowe · Interiors</small></a>
+    <nav class="main">
+      <a href="#work" data-i18n="navWork">Work</a>
+      <a href="#services" data-i18n="navSvc">Services</a>
+      <a href="#process" data-i18n="navProc">Process</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+    </nav>
+    <button class="lang-btn" id="langBtn" type="button" aria-label="Switch language">عربي</button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="heroEyebrow">Interior design · Abu Dhabi & Dubai</p>
+    <h1 data-i18n="heroH1">K<span class="k">'</span>ROWE</h1>
+    <p class="promise" data-i18n="heroPromise">Colour-first interiors that feel like you.</p>
+    <p class="sub" data-i18n="heroSub">I'm <b>Kristina Rowe</b>. I design homes around colour — how it changes your mood, your light, your day. Bold where it should be bold. Calm where you need calm. Never beige by default.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-must" href="https://www.instagram.com/k.rowe.interiors/" target="_blank" rel="noopener" data-i18n="dmBtn">Message on Instagram</a>
+      <a class="btn btn-ghost" href="#work" data-i18n="seeWork">See the work</a>
+    </div>
+    <div class="hero-strip">
+      <div><div class="n" data-i18n="hs1n">Colour first</div><div class="t" data-i18n="hs1t">Every room starts with a palette</div></div>
+      <div><div class="n" data-i18n="hs2n">Art last</div><div class="t" data-i18n="hs2t">The final layer that makes it yours</div></div>
+      <div><div class="n" data-i18n="hs3n">One designer</div><div class="t" data-i18n="hs3t">You work with me, start to finish</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<!-- WORK -->
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow" data-i18n="workEyebrow">Selected work</p>
+        <h2 data-i18n="workH2">Rooms with <span class="serif-i">a point of view</span></h2>
+      </div>
+      <p class="lede" data-i18n="workLede">Every project starts with one question: how should this room make you feel?</p>
+    </div>
+    <div class="grid">
+      <article class="proj p1 reveal"><img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=1200&auto=format&fit=crop" alt="Deep-coloured living room" loading="lazy"><div class="tx"><span class="tag" data-i18n="pj1tag">Living</span><h3 data-i18n="pj1h">Aubergine Living</h3><p data-i18n="pj1p">Deep purple walls, warm brass, art that holds the room. Evening light does the rest.</p></div></article>
+      <article class="proj p2 reveal"><img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?q=80&w=1200&auto=format&fit=crop" alt="Kitchen with soft green cabinetry" loading="lazy"><div class="tx"><span class="tag" data-i18n="pj2tag">Kitchen</span><h3 data-i18n="pj2h">Celadon & Brass Kitchen</h3><p data-i18n="pj2p">Soft green cabinetry against brushed brass — calm in the morning, rich at night.</p></div></article>
+      <article class="proj p3 reveal"><img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1200&auto=format&fit=crop" alt="Bedroom in warm tones" loading="lazy"><div class="tx"><span class="tag" data-i18n="pj3tag">Bedroom</span><h3 data-i18n="pj3h">Mustard Mornings</h3><p data-i18n="pj3p">A bedroom that wakes up before you do — golden textiles, low warm light.</p></div></article>
+      <article class="proj p4 reveal"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop" alt="Villa interior under renovation styling" loading="lazy"><div class="tx"><span class="tag" data-i18n="pj4tag">In progress</span><h3 data-i18n="pj4h">The Villa Renovation</h3><p data-i18n="pj4p">My own Abu Dhabi home, renovated room by room — I'm sharing every decision as it happens.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="svcEyebrow">What I do</p>
+    <h2 data-i18n="svcH2">Three ways <span class="serif-i">to start</span></h2>
+    <div class="svc-grid">
+      <div class="svc reveal"><div class="num">01</div><h3 data-i18n="sv1h">Full-home design</h3><p data-i18n="sv1p">The whole home, one clear vision — layout, colour, furniture, lighting and the final styling, designed and sourced for you.</p></div>
+      <div class="svc reveal"><div class="num">02</div><h3 data-i18n="sv2h">Colour consultation</h3><p data-i18n="sv2p">One focused session on colour psychology: a palette built around your light, your rooms and how you want to feel in them.</p></div>
+      <div class="svc reveal"><div class="num">03</div><h3 data-i18n="sv3h">Art curation & styling</h3><p data-i18n="sv3p">Art is the final layer, not an afterthought. I source and place pieces that finish the room — and start conversations.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="procEyebrow">How it works</p>
+    <h2 data-i18n="procH2">Colour first, <span class="serif-i">art last</span></h2>
+    <div class="steps">
+      <div class="step reveal"><div class="num">01</div><h3 data-i18n="st1h">Meet & colour story</h3><p data-i18n="st1p">We talk about how you live and how you want each room to feel. That becomes your colour story.</p></div>
+      <div class="step reveal"><div class="num">02</div><h3 data-i18n="st2h">Concept & palette</h3><p data-i18n="st2p">You see the concept and full palette for every room — bold choices, shown clearly, before anything is bought.</p></div>
+      <div class="step reveal"><div class="num">03</div><h3 data-i18n="st3h">Design & sourcing</h3><p data-i18n="st3p">Layout, furniture, lighting and finishes — designed in detail and sourced piece by piece.</p></div>
+      <div class="step reveal"><div class="num">04</div><h3 data-i18n="st4h">Art & final layer</h3><p data-i18n="st4p">Art, objects and styling go in last. That's the layer that makes the home unmistakably yours.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap cols">
+    <div class="silhouette" aria-hidden="true">
+      <div class="halo"></div>
+      <div class="arch">
+        <svg viewBox="0 0 300 360" role="img" aria-label="Designer portrait silhouette">
+          <defs>
+            <linearGradient id="sil" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#33203A"/>
+              <stop offset="1" stop-color="#160A1B"/>
+            </linearGradient>
+          </defs>
+          <circle cx="150" cy="30" r="17" fill="url(#sil)"/>
+          <path fill="url(#sil)" stroke="rgba(42,18,48,.55)" stroke-width="1.4" d="M150 38c27 0 44 21 44 47 0 17-7 30-16 38 4 3 10 6 17 8 34 8 51 30 59 62 6 24 9 55 10 97l1 70H35l1-70c1-42 4-73 10-97 8-32 25-54 59-62 7-2 13-5 17-8-9-8-16-21-16-38 0-26 17-47 44-47z"/>
+          <path d="M124 138l26 44 26-44 14 4-40 66-40-66z" fill="#F7F0E1" opacity=".95"/>
+          <circle cx="150" cy="196" r="7" fill="#E3A81C"/>
+          <path d="M150 203v34" stroke="#E3A81C" stroke-width="3.4" stroke-linecap="round"/>
+          <circle cx="150" cy="246" r="5.5" fill="#E3A81C"/>
+        </svg>
+        <div class="tag" data-i18n="silTag">Kristina Rowe</div>
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="aboutEyebrow">About Kristina</p>
+      <h2 data-i18n="aboutH2">One designer. <span class="serif-i">No hand-offs.</span></h2>
+      <p class="lede" data-i18n="aboutP1">I'm Kristina Rowe, the designer behind K'ROWE. My work starts with <b>colour psychology</b> — the simple idea that the colours around you change how you feel — and ends with art, the layer that makes a house truly yours.</p>
+      <p class="lede" style="margin-top:14px" data-i18n="aboutP2">Right now I'm renovating <b>my own Abu Dhabi villa</b> and sharing the whole process — the palettes, the mistakes, the wins — so you can see exactly how I work before you hire me.</p>
+      <div class="facts">
+        <div class="row"><span class="k" data-i18n="f1k">Studio</span><span class="v" data-i18n="f1v">K'ROWE — solo design practice</span></div>
+        <div class="row"><span class="k" data-i18n="f2k">Based in</span><span class="v" data-i18n="f2v">Abu Dhabi · working in Dubai</span></div>
+        <div class="row"><span class="k" data-i18n="f3k">Known for</span><span class="v" data-i18n="f3v">Bold colour · art-led rooms</span></div>
+        <div class="row"><span class="k" data-i18n="f4k">Instagram</span><span class="v"><a href="https://www.instagram.com/k.rowe.interiors/" target="_blank" rel="noopener" dir="ltr">@k.rowe.interiors</a></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL / CONTACT -->
+<section class="final" id="contact">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="finEyebrow">Start a project</p>
+    <h2 data-i18n="finH2">Tell me about <span class="serif-i">your home</span></h2>
+    <p class="lede" data-i18n="finP">Send me a message on Instagram — a few lines about your home and the feeling you want. I reply personally.</p>
+    <div class="ctas">
+      <a class="btn btn-must" href="https://www.instagram.com/k.rowe.interiors/" target="_blank" rel="noopener" data-i18n="dmBtn">Message on Instagram</a>
+      <a class="btn btn-ghost" href="#work" data-i18n="seeWork">See the work</a>
+    </div>
+    <div class="where">
+      <span data-i18n="w1">Abu Dhabi</span>
+      <span data-i18n="w2">Dubai</span>
+      <span data-i18n="w3">Instagram · @k.rowe.interiors</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-in">
+      <div>
+        <a class="wordmark" href="#top">K<span>'</span>ROWE<small data-i18n="wmSub">Kristina Rowe · Interiors</small></a>
+        <p style="margin-top:12px" data-i18n="footLine">Colour-first interior design · Abu Dhabi & Dubai</p>
+      </div>
+      <div>
+        <p><a href="https://www.instagram.com/k.rowe.interiors/" target="_blank" rel="noopener" dir="ltr">Instagram · @k.rowe.interiors</a></p>
+      </div>
+    </div>
+    <p class="disc" data-i18n="disc">Demo website concept prepared by Safwan Digital. Not an official website.</p>
+  </div>
+</footer>
+
+<!-- STICKY BAR: preview timer + Instagram CTA -->
+<div class="stickybar">
+  <div class="wrap in">
+    <span class="sb-fill" id="sbFill"></span>
+    <div class="sb-timer"><span id="sbDays">10 days left</span><span class="ends" id="sbEnds">Preview ends 7 Dec</span></div>
+    <a class="btn btn-must sb-book" href="https://www.instagram.com/k.rowe.interiors/" target="_blank" rel="noopener" data-i18n="dmBtn">Message on Instagram</a>
+  </div>
+</div>
+
+<script>
+const I18N = {
+en:{bar:'Private preview prepared for <b>K\'ROWE — Kristina Rowe</b> · Valid until 7 Dec 2026',wmSub:'Kristina Rowe · Interiors',navWork:'Work',navSvc:'Services',navProc:'Process',navAbout:'About',heroEyebrow:'Interior design · Abu Dhabi & Dubai',heroH1:'K<span class="k">\'</span>ROWE',heroPromise:'Colour-first interiors that feel like you.',heroSub:'I\'m <b>Kristina Rowe</b>. I design homes around colour — how it changes your mood, your light, your day. Bold where it should be bold. Calm where you need calm. Never beige by default.',dmBtn:'Message on Instagram',seeWork:'See the work',hs1n:'Colour first',hs1t:'Every room starts with a palette',hs2n:'Art last',hs2t:'The final layer that makes it yours',hs3n:'One designer',hs3t:'You work with me, start to finish',workEyebrow:'Selected work',workH2:'Rooms with <span class="serif-i">a point of view</span>',workLede:'Every project starts with one question: how should this room make you feel?',pj1tag:'Living',pj1h:'Aubergine Living',pj1p:'Deep purple walls, warm brass, art that holds the room. Evening light does the rest.',pj2tag:'Kitchen',pj2h:'Celadon & Brass Kitchen',pj2p:'Soft green cabinetry against brushed brass — calm in the morning, rich at night.',pj3tag:'Bedroom',pj3h:'Mustard Mornings',pj3p:'A bedroom that wakes up before you do — golden textiles, low warm light.',pj4tag:'In progress',pj4h:'The Villa Renovation',pj4p:'My own Abu Dhabi home, renovated room by room — I\'m sharing every decision as it happens.',svcEyebrow:'What I do',svcH2:'Three ways <span class="serif-i">to start</span>',sv1h:'Full-home design',sv1p:'The whole home, one clear vision — layout, colour, furniture, lighting and the final styling, designed and sourced for you.',sv2h:'Colour consultation',sv2p:'One focused session on colour psychology: a palette built around your light, your rooms and how you want to feel in them.',sv3h:'Art curation & styling',sv3p:'Art is the final layer, not an afterthought. I source and place pieces that finish the room — and start conversations.',procEyebrow:'How it works',procH2:'Colour first, <span class="serif-i">art last</span>',st1h:'Meet & colour story',st1p:'We talk about how you live and how you want each room to feel. That becomes your colour story.',st2h:'Concept & palette',st2p:'You see the concept and full palette for every room — bold choices, shown clearly, before anything is bought.',st3h:'Design & sourcing',st3p:'Layout, furniture, lighting and finishes — designed in detail and sourced piece by piece.',st4h:'Art & final layer',st4p:'Art, objects and styling go in last. That\'s the layer that makes the home unmistakably yours.',aboutEyebrow:'About Kristina',aboutH2:'One designer. <span class="serif-i">No hand-offs.</span>',aboutP1:'I\'m Kristina Rowe, the designer behind K\'ROWE. My work starts with <b>colour psychology</b> — the simple idea that the colours around you change how you feel — and ends with art, the layer that makes a house truly yours.',aboutP2:'Right now I\'m renovating <b>my own Abu Dhabi villa</b> and sharing the whole process — the palettes, the mistakes, the wins — so you can see exactly how I work before you hire me.',f1k:'Studio',f1v:'K\'ROWE — solo design practice',f2k:'Based in',f2v:'Abu Dhabi · working in Dubai',f3k:'Known for',f3v:'Bold colour · art-led rooms',f4k:'Instagram',silTag:'Kristina Rowe',finEyebrow:'Start a project',finH2:'Tell me about <span class="serif-i">your home</span>',finP:'Send me a message on Instagram — a few lines about your home and the feeling you want. I reply personally.',w1:'Abu Dhabi',w2:'Dubai',w3:'Instagram · @k.rowe.interiors',footLine:'Colour-first interior design · Abu Dhabi & Dubai',disc:'Demo website concept prepared by Safwan Digital. Not an official website.',sbEnds:'Preview ends 7 Dec',sbEnded:'Preview ended'},
+ar:{bar:'معاينة خاصة مُعدّة لـ<b>K\'ROWE — كريستينا رو</b> · صالحة حتى 7 ديسمبر 2026',wmSub:'كريستينا رو · تصميم داخلي',navWork:'الأعمال',navSvc:'الخدمات',navProc:'الخطوات',navAbout:'عن كريستينا',heroEyebrow:'تصميم داخلي · أبوظبي ودبي',heroH1:'K\'ROWE',heroPromise:'تصاميم تبدأ من اللون… وتشبهك.',heroSub:'أنا <b>كريستينا رو</b>. أصمم المنازل حول اللون — وكيف يغيّر مزاجك وإضاءتك ويومك. جريء حيث يجب أن يكون جريئاً، وهادئ حيث تحتاج الهدوء. لا بيج افتراضي أبداً.',dmBtn:'راسلني على إنستغرام',seeWork:'شاهد الأعمال',hs1n:'اللون أولاً',hs1t:'كل غرفة تبدأ بلوحة ألوان',hs2n:'الفن أخيراً',hs2t:'الطبقة الأخيرة التي تجعله منزلك',hs3n:'مصممة واحدة',hs3t:'تعمل معي من البداية إلى النهاية',workEyebrow:'أعمال مختارة',workH2:'غرف <span class="serif-i">لها رأي</span>',workLede:'كل مشروع يبدأ بسؤال واحد: ما الشعور الذي تريد أن تمنحك إياه هذه الغرفة؟',pj1tag:'معيشة',pj1h:'معيشة الباذنجاني',pj1p:'جدران بنفسجية عميقة ونحاس دافئ وفن يمسك الغرفة. ضوء المساء يكمل الباقي.',pj2tag:'مطبخ',pj2h:'مطبخ السيلادون والنحاس',pj2p:'خزائن خضراء ناعمة مقابل نحاس مصقول — هادئ في الصباح وغني في الليل.',pj3tag:'نوم',pj3h:'صباحات الخردل',pj3p:'غرفة نوم تستيقظ قبلك — منسوجات ذهبية وإضاءة دافئة منخفضة.',pj4tag:'جارٍ العمل',pj4h:'تجديد الفيلا',pj4p:'منزلي الخاص في أبوظبي، أجدده غرفة بعد غرفة — وأشارك كل قرار أثناء حدوثه.',svcEyebrow:'ماذا أقدم',svcH2:'ثلاث طرق <span class="serif-i">للبداية</span>',sv1h:'تصميم منزل كامل',sv1p:'المنزل كله برؤية واحدة واضحة — التخطيط واللون والأثاث والإضاءة واللمسات الأخيرة، بتصميم وتوريد كامل.',sv2h:'استشارة الألوان',sv2p:'جلسة واحدة مركزة في علم نفس الألوان: لوحة مبنية حول إضاءتك وغرفك والشعور الذي تريده فيها.',sv3h:'اختيار الفن والتنسيق',sv3p:'الفن هو الطبقة الأخيرة لا فكرة لاحقة. أختار وأضع قطعاً تكمل الغرفة — وتبدأ الأحاديث.',procEyebrow:'كيف نعمل',procH2:'اللون أولاً، <span class="serif-i">والفن أخيراً</span>',st1h:'اللقاء وقصة اللون',st1p:'نتحدث عن أسلوب حياتك والشعور الذي تريده في كل غرفة. هكذا تولد قصة ألوانك.',st2h:'المفهوم ولوحة الألوان',st2p:'ترى المفهوم ولوحة الألوان الكاملة لكل غرفة — خيارات جريئة معروضة بوضوح قبل شراء أي شيء.',st3h:'التصميم والتوريد',st3p:'التخطيط والأثاث والإضاءة والتشطيبات — مصممة بالتفصيل ومورّدة قطعة بعد قطعة.',st4h:'الفن والطبقة الأخيرة',st4p:'يدخل الفن والقطع والتنسيق في النهاية. هذه هي الطبقة التي تجعل المنزل يشبهك بلا شك.',aboutEyebrow:'عن كريستينا',aboutH2:'مصممة واحدة. <span class="serif-i">بلا وسطاء.</span>',aboutP1:'أنا كريستينا رو، المصممة خلف K\'ROWE. يبدأ عملي من <b>علم نفس الألوان</b> — الفكرة البسيطة أن الألوان حولك تغيّر شعورك — وينتهي بالفن، الطبقة التي تجعل المنزل لك حقاً.',aboutP2:'حالياً أجدد <b>فيلتي الخاصة في أبوظبي</b> وأشارك العملية كاملة — اللوحات والأخطاء والنجاحات — لترى بالضبط كيف أعمل قبل أن تستعين بي.',f1k:'الاستوديو',f1v:'K\'ROWE — ممارسة تصميم فردية',f2k:'المقر',f2v:'أبوظبي · وأعمل في دبي',f3k:'معروفة بـ',f3v:'الألوان الجريئة · غرف يقودها الفن',f4k:'إنستغرام',silTag:'كريستينا رو',finEyebrow:'ابدأ مشروعاً',finH2:'حدثني عن <span class="serif-i">منزلك</span>',finP:'أرسل لي رسالة على إنستغرام — سطور قليلة عن منزلك والشعور الذي تريده. أردّ شخصياً.',w1:'أبوظبي',w2:'دبي',w3:'إنستغرام · @k.rowe.interiors',footLine:'تصميم داخلي يبدأ من اللون · أبوظبي ودبي',disc:'موقع تجريبي من إعداد صفوان ديجيتال. ليس موقعاً رسمياً.',sbEnds:'تنتهي المعاينة 7 ديسمبر',sbEnded:'انتهت المعاينة'}
+};
+let lang='en';
+function applyLang(l){
+  lang=l; const d=I18N[l];
+  document.documentElement.lang=l; document.documentElement.dir=(l==='ar')?'rtl':'ltr';
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n'); if(d[k]!==undefined) el.innerHTML=d[k];});
+  document.getElementById('langBtn').textContent=(l==='ar')?'EN':'عربي';
+  updateTimer();
+}
+document.getElementById('langBtn').addEventListener('click',()=>applyLang(lang==='en'?'ar':'en'));
+const header=document.getElementById('header');
+addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>10),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+/* sticky-bar timer — 10-day window: 27 Nov 2026 → 7 Dec 2026 (Asia/Dubai) */
+const CD_START=Date.UTC(2026,10,26,20,0,0), CD_END=Date.UTC(2026,11,7,6,0,0);
+function updateTimer(){
+  const now=Date.now(), d=I18N[lang];
+  const daysEl=document.getElementById('sbDays'), endsEl=document.getElementById('sbEnds'), fill=document.getElementById('sbFill');
+  if(now>=CD_END){daysEl.textContent=d.sbEnded; endsEl.textContent='Safwan Digital'; fill.style.width='100%'; return;}
+  const days=Math.max(0,Math.ceil((CD_END-now)/864e5));
+  daysEl.textContent = lang==='ar' ? `متبقّي ${days} أيام · تنتهي المعاينة 7 ديسمبر` : `${days} day${days===1?'':'s'} left · Preview ends 7 Dec`;
+  endsEl.textContent='';
+  const p=Math.min(1,Math.max(0,(now-CD_START)/(CD_END-CD_START)));
+  fill.style.width=((1-p)*100)+'%';
+}
+setInterval(updateTimer,6e4);
+applyLang('en');
+</script>
+</body>
+</html>
